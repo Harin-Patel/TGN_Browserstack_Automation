@@ -1,0 +1,1470 @@
+2026-03-18 23:56:56 - [32minfo[39m: Reading configs from /Users/harinpatel/Documents/TGN_Browserstack_Automation/browserstack.yml
+2026-03-18 23:56:56 - [32minfo[39m: Log Directory has been set to /Users/harinpatel/Documents/TGN_Browserstack_Automation/log
+2026-03-18 23:56:56 - [32minfo[39m: Log Directory has been set to /Users/harinpatel/Documents/TGN_Browserstack_Automation/log
+2026-03-18 23:56:56 - [32minfo[39m: Running SDK with args /opt/homebrew/Cellar/node/25.2.1/bin/node /Users/harinpatel/.npm-global/bin/browserstack-node-sdk playwright test tests/auth
+2026-03-18 23:56:56 - [32minfo[39m: SDK run started with id: 6211e66c-8f6c-4565-b468-118811e0d757
+2026-03-18 23:56:56 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2026-03-18 23:56:56 - [32minfo[39m: Running SDK with args /opt/homebrew/Cellar/node/25.2.1/bin/node /Users/harinpatel/.npm-global/bin/browserstack-node-sdk playwright test tests/auth
+2026-03-18 23:56:56 - [32minfo[39m: SDK run started with id: 6211e66c-8f6c-4565-b468-118811e0d757
+2026-03-18 23:56:56 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2026-03-18 23:56:58 - [32minfo[39m: [BrowserstackCLI] startMain: Starting main process
+2026-03-18 23:56:58 - [32minfo[39m: [BrowserstackCLI] startMain: Starting main process
+2026-03-18 23:56:58 - [32minfo[39m: [CLIUtils] Current CLI Path Found: /Users/harinpatel/.browserstack/cli/binary-macos-arm64
+2026-03-18 23:56:58 - [32minfo[39m: [CLIUtils] Current CLI Path Found: /Users/harinpatel/.browserstack/cli/binary-macos-arm64
+2026-03-18 23:56:59 - [32minfo[39m: [BrowserstackCLI] spawning command='/Users/harinpatel/.browserstack/cli/binary-macos-arm64,sdk'
+2026-03-18 23:56:59 - [32minfo[39m: [BrowserstackCLI] spawning command='/Users/harinpatel/.browserstack/cli/binary-macos-arm64,sdk'
+2026-03-18 23:56:59 - [32minfo[39m: [BrowserstackCLI] CLI params loaded: {"id":"a6cac9c7-577b-4893-bf0c-51b8e62ac1e2","listen":"unix:/tmp/sdk-platform-a6cac9c7-577b-4893-bf0c-51b8e62ac1e2.sock"}
+2026-03-18 23:56:59 - [32minfo[39m: [BrowserstackCLI] CLI params loaded: {"id":"a6cac9c7-577b-4893-bf0c-51b8e62ac1e2","listen":"unix:/tmp/sdk-platform-a6cac9c7-577b-4893-bf0c-51b8e62ac1e2.sock"}
+2026-03-18 23:56:59 - [32minfo[39m: [GrpcClient] Connected to gRPC server at unix:/tmp/sdk-platform-a6cac9c7-577b-4893-bf0c-51b8e62ac1e2.sock
+2026-03-18 23:56:59 - [32minfo[39m: [GrpcClient] Initialized gRPC client with bin session id: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2 and listen address: unix:/tmp/sdk-platform-a6cac9c7-577b-4893-bf0c-51b8e62ac1e2.sock
+2026-03-18 23:56:59 - [32minfo[39m: [GrpcClient] startBinSession: Calling startBinSession
+2026-03-18 23:56:59 - [32minfo[39m: [GrpcClient] setCliArgs: cliArgs=["playwright","test","tests/auth"], parsedConfig=[]
+2026-03-18 23:56:59 - [32minfo[39m: [GrpcClient] Connected to gRPC server at unix:/tmp/sdk-platform-a6cac9c7-577b-4893-bf0c-51b8e62ac1e2.sock
+2026-03-18 23:56:59 - [32minfo[39m: [GrpcClient] Initialized gRPC client with bin session id: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2 and listen address: unix:/tmp/sdk-platform-a6cac9c7-577b-4893-bf0c-51b8e62ac1e2.sock
+2026-03-18 23:56:59 - [32minfo[39m: [GrpcClient] startBinSession: Calling startBinSession
+2026-03-18 23:56:59 - [32minfo[39m: [GrpcClient] setCliArgs: cliArgs=["playwright","test","tests/auth"], parsedConfig=[]
+2026-03-18 23:57:01 - [32minfo[39m: [GrpcClient] StartBinSession successful
+2026-03-18 23:57:01 - [32minfo[39m: [GrpcClient] StartBinSession successful
+2026-03-18 23:57:01 - [32minfo[39m: [BrowserstackCLI] loadModules: Loading modules
+2026-03-18 23:57:01 - [32minfo[39m: [BrowserstackCLI] loadModules: binSessionId=a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:01 - [32minfo[39m: [BrowserstackCLI] loading Modules.
+2026-03-18 23:57:01 - [32minfo[39m: [BrowserstackCLI] setCliArgs: cliArgs=["playwright","test","tests/auth"]
+2026-03-18 23:57:01 - [32minfo[39m: [BrowserstackCLI] Accessibility success=false
+2026-03-18 23:57:01 - [32minfo[39m: [BrowserstackCLI] loadModules: Loading modules
+2026-03-18 23:57:01 - [32minfo[39m: [BrowserstackCLI] loadModules: binSessionId=a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:01 - [32minfo[39m: [BrowserstackCLI] loading Modules.
+2026-03-18 23:57:01 - [32minfo[39m: [BrowserstackCLI] setCliArgs: cliArgs=["playwright","test","tests/auth"]
+2026-03-18 23:57:01 - [32minfo[39m: [BrowserstackCLI] Accessibility success=false
+2026-03-18 23:57:03 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:03 - [32minfo[39m: [GrpcClient] Connected to gRPC server at unix:/tmp/sdk-platform-a6cac9c7-577b-4893-bf0c-51b8e62ac1e2.sock
+2026-03-18 23:57:03 - [32minfo[39m: [GrpcClient] Connecting bin session
+2026-03-18 23:57:03 - [32minfo[39m: [GrpcClient] ConnectBinSession successful
+2026-03-18 23:57:03 - [32minfo[39m: [BrowserstackCLI] loadModules: Loading modules
+2026-03-18 23:57:03 - [32minfo[39m: [BrowserstackCLI] loadModules: binSessionId=a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:03 - [32minfo[39m: [BrowserstackCLI] loading Modules.
+2026-03-18 23:57:03 - [32minfo[39m: [BrowserstackCLI] Accessibility success=false
+2026-03-18 23:57:03 - [32minfo[39m: [GrpcClient] Getting Playwright config
+2026-03-18 23:57:03 - [32minfo[39m: [GrpcClient] PlaywrightConfig request successful
+2026-03-18 23:57:03 - [32minfo[39m: Setting up TestInfo directory at /Users/harinpatel/Documents/TGN_Browserstack_Automation/log/.obs_test_details-default
+2026-03-18 23:57:03 - [32minfo[39m: [PlaywrightTestFramework] trackPlaywrightInstance: created instance for target=9353:0, state=TestFrameworkState.INIT_TEST
+2026-03-18 23:57:03 - [32minfo[39m: [PlaywrightTestFramework] trackPlaywrightInstance: saved instance contextId=37435a3c71615015f90e03858fe1eb2c9b5e7aab76b5e3e971c7a1d3af4c57af target=9353:0
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] Connected to gRPC server at unix:/tmp/sdk-platform-a6cac9c7-577b-4893-bf0c-51b8e62ac1e2.sock
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] Connecting bin session
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] Connected to gRPC server at unix:/tmp/sdk-platform-a6cac9c7-577b-4893-bf0c-51b8e62ac1e2.sock
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] Connecting bin session
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] Connected to gRPC server at unix:/tmp/sdk-platform-a6cac9c7-577b-4893-bf0c-51b8e62ac1e2.sock
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] Connecting bin session
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] Connected to gRPC server at unix:/tmp/sdk-platform-a6cac9c7-577b-4893-bf0c-51b8e62ac1e2.sock
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] Connecting bin session
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] ConnectBinSession successful
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] ConnectBinSession successful
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] ConnectBinSession successful
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] loadModules: Loading modules
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] loadModules: binSessionId=a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] loading Modules.
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] Accessibility success=false
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] Getting Playwright config
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] ConnectBinSession successful
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] PlaywrightConfig request successful
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] loadModules: Loading modules
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] loadModules: binSessionId=a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] loading Modules.
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] Accessibility success=false
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] Getting Playwright config
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] loadModules: Loading modules
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] loadModules: binSessionId=a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] loading Modules.
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] Accessibility success=false
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] Getting Playwright config
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] PlaywrightConfig request successful
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] PlaywrightConfig request successful
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] loadModules: Loading modules
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] loadModules: binSessionId=a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] loading Modules.
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] Accessibility success=false
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] Getting Playwright config
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] PlaywrightConfig request successful
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:57:04 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] startChild: client and channel already exist, stopping here
+2026-03-18 23:57:04 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: created instance for target=9357:0, state=AutomationFrameworkState.CREATE
+2026-03-18 23:57:04 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: saved instance contextId=9e8deec36781cbdda08b8463a2fbb2a565534b7b89f63a86ca1305b86d635b64 target=9357:0
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] startChild: client and channel already exist, stopping here
+2026-03-18 23:57:04 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: created instance for target=9356:0, state=AutomationFrameworkState.CREATE
+2026-03-18 23:57:04 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: saved instance contextId=0197d8576360397be5050c475499672728ca8ce83c0efe8364acc9c2265e5ee2 target=9356:0
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] startChild: client and channel already exist, stopping here
+2026-03-18 23:57:04 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: created instance for target=9360:0, state=AutomationFrameworkState.CREATE
+2026-03-18 23:57:04 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: saved instance contextId=0957fd2626762ebc1718b631791c6cf049f0922d7e75006ef81e9b0b60b418b1 target=9360:0
+2026-03-18 23:57:04 - [32minfo[39m: [BrowserstackCLI] startChild: client and channel already exist, stopping here
+2026-03-18 23:57:04 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: created instance for target=9359:0, state=AutomationFrameworkState.CREATE
+2026-03-18 23:57:04 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: saved instance contextId=140f1302ff0967e5c8c068c783ffad370182ddd9400b5e40c7d84408fd60224c target=9359:0
+2026-03-18 23:57:11 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:11 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:11 - [32minfo[39m: [GrpcClient] Sending DriverInit
+2026-03-18 23:57:11 - [32minfo[39m: [GrpcClient] DriverInit request successful
+2026-03-18 23:57:11 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:12 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:12 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:57:12 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:57:12 - [32minfo[39m: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-03-18 23:57:12 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:12 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:12 - [32minfo[39m: [GrpcClient] Sending DriverInit
+2026-03-18 23:57:12 - [32minfo[39m: [GrpcClient] DriverInit request successful
+2026-03-18 23:57:12 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:13 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:13 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:13 - [32minfo[39m: [GrpcClient] Sending DriverInit
+2026-03-18 23:57:13 - [32minfo[39m: [GrpcClient] DriverInit request successful
+2026-03-18 23:57:13 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:13 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:13 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:57:13 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:57:13 - [32minfo[39m: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-03-18 23:57:13 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:13 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:57:13 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:57:14 - [32minfo[39m: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-03-18 23:57:14 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:14 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:14 - [32minfo[39m: [GrpcClient] Sending DriverInit
+2026-03-18 23:57:14 - [32minfo[39m: [GrpcClient] DriverInit request successful
+2026-03-18 23:57:14 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:15 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:15 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:57:15 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:57:15 - [32minfo[39m: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-03-18 23:57:30 - [32minfo[39m: [Accessibility] afterTestHook state: accessibilityPlatform=false, bstackA11yShouldScan=true
+2026-03-18 23:57:30 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:30 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:57:30 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:57:30 - [32minfo[39m: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-03-18 23:57:30 - [32minfo[39m: [PlaywrightDriverModule] testId: 2ba00858970829ed2f51-17b2280ca63e1542cb18
+2026-03-18 23:57:30 - [32minfo[39m: [PlaywrightDriverModule] testData from onAfterTest: {
+  uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439',
+  test_framework_name: 'Playwright',
+  test_framework_version: '1.58.2',
+  test_logs: [],
+  test_hooks_finished: {},
+  test_hooks_started: {},
+  test_uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439',
+  test_result: 'pending',
+  automate_session_name: 'auth/forgot-password.spec.js - Forgot Password Flow',
+  test_file_path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/forgot-password.spec.js',
+  test_id: '2ba00858970829ed2f51-17b2280ca63e1542cb18',
+  test_name: 'Forgot Password Flow',
+  test_location: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/forgot-password.spec.js:3',
+  test_code: 'async ({\n' +
+    '  page\n' +
+    '}) => {\n' +
+    "  await page.goto('https://tgn-staging.staffbot.com/');\n" +
+    '\n' +
+    '  // open login\n' +
+    "  await page.getByRole('link', {\n" +
+    "    name: 'Login or Create Account'\n" +
+    '  }).click();\n' +
+    "  await page.getByRole('link', {\n" +
+    "    name: 'Sign in here'\n" +
+    '  }).click();\n' +
+    '\n' +
+    '  // click forgot password\n' +
+    "  await page.getByText('Forgot your password? →', {\n" +
+    '    exact: true\n' +
+    '  }).click();\n' +
+    '\n' +
+    '  // enter email\n' +
+    "  await page.getByPlaceholder('Enter your email address').fill('james@mailinator.com');\n" +
+    '\n' +
+    '  // submit\n' +
+    "  await page.getByRole('button', {\n" +
+    "    name: 'Send Reset Link'\n" +
+    '  }).click();\n' +
+    '\n' +
+    '  // verify success message\n' +
+    "  await expect(page.getByText('Password reset email sent!')).toBeVisible();\n" +
+    '\n' +
+    '  // back to login\n' +
+    "  await page.getByRole('link', {\n" +
+    "    name: 'Back to Login'\n" +
+    '  }).click();\n' +
+    '}',
+  test_tags: [],
+  test_started_at: '2026-03-18T18:27:04.826Z',
+  test_scope: 'auth/forgot-password.spec.js - Forgot Password Flow',
+  test_scopes: [],
+  test_rerun_name: ' -latest:Windows 11-browserstack auth/forgot-password.spec.js Forgot Password Flow',
+  attachments: [
+    {
+      name: 'screenshot',
+      path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-0/a39a0fbed8bc00009e60ed174c13a396.png'
+    }
+  ]
+}
+2026-03-18 23:57:30 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:57:30 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:57:31 - [32minfo[39m: getting screenshots results.
+2026-03-18 23:57:31 - [32minfo[39m: [GrpcClient] Sending LogCreatedEvent
+2026-03-18 23:57:31 - [32minfo[39m: [GrpcClient] LogCreatedEvent request successful
+2026-03-18 23:57:31 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:57:31 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:57:33 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:33 - [32minfo[39m: [GrpcClient] Connected to gRPC server at unix:/tmp/sdk-platform-a6cac9c7-577b-4893-bf0c-51b8e62ac1e2.sock
+2026-03-18 23:57:33 - [32minfo[39m: [GrpcClient] Connecting bin session
+2026-03-18 23:57:33 - [32minfo[39m: [GrpcClient] ConnectBinSession successful
+2026-03-18 23:57:33 - [32minfo[39m: [BrowserstackCLI] loadModules: Loading modules
+2026-03-18 23:57:33 - [32minfo[39m: [BrowserstackCLI] loadModules: binSessionId=a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:33 - [32minfo[39m: [BrowserstackCLI] loading Modules.
+2026-03-18 23:57:33 - [32minfo[39m: [BrowserstackCLI] Accessibility success=false
+2026-03-18 23:57:33 - [32minfo[39m: [GrpcClient] Getting Playwright config
+2026-03-18 23:57:33 - [32minfo[39m: [GrpcClient] PlaywrightConfig request successful
+2026-03-18 23:57:33 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:57:33 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:33 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:57:33 - [32minfo[39m: [BrowserstackCLI] startChild: client and channel already exist, stopping here
+2026-03-18 23:57:33 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: created instance for target=9386:0, state=AutomationFrameworkState.CREATE
+2026-03-18 23:57:33 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: saved instance contextId=aaca0cce1a6227e4f8057bc387ad76bf4cb293787da64ea45be585e7a7737108 target=9386:0
+2026-03-18 23:57:34 - [32minfo[39m: [Accessibility] afterTestHook state: accessibilityPlatform=false, bstackA11yShouldScan=true
+2026-03-18 23:57:34 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:34 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:57:34 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:57:34 - [32minfo[39m: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-03-18 23:57:34 - [32minfo[39m: [Accessibility] afterTestHook state: accessibilityPlatform=false, bstackA11yShouldScan=true
+2026-03-18 23:57:34 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:34 - [32minfo[39m: [PlaywrightDriverModule] testId: 2ba00858970829ed2f51-e190f8cbbc4136d9c409
+2026-03-18 23:57:34 - [32minfo[39m: [PlaywrightDriverModule] testData from onAfterTest: {
+  uuid: 'b0735bf2-e7ec-4c38-ba8f-23c64c907904',
+  test_framework_name: 'Playwright',
+  test_framework_version: '1.58.2',
+  test_logs: [],
+  test_hooks_finished: {},
+  test_hooks_started: {},
+  test_uuid: 'b0735bf2-e7ec-4c38-ba8f-23c64c907904',
+  test_result: 'pending',
+  automate_session_name: 'auth/forgot-password.spec.js - Forgot Password Flow',
+  test_file_path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/forgot-password.spec.js',
+  test_id: '2ba00858970829ed2f51-e190f8cbbc4136d9c409',
+  test_name: 'Forgot Password Flow',
+  test_location: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/forgot-password.spec.js:3',
+  test_code: 'async ({\n' +
+    '  page\n' +
+    '}) => {\n' +
+    "  await page.goto('https://tgn-staging.staffbot.com/');\n" +
+    '\n' +
+    '  // open login\n' +
+    "  await page.getByRole('link', {\n" +
+    "    name: 'Login or Create Account'\n" +
+    '  }).click();\n' +
+    "  await page.getByRole('link', {\n" +
+    "    name: 'Sign in here'\n" +
+    '  }).click();\n' +
+    '\n' +
+    '  // click forgot password\n' +
+    "  await page.getByText('Forgot your password? →', {\n" +
+    '    exact: true\n' +
+    '  }).click();\n' +
+    '\n' +
+    '  // enter email\n' +
+    "  await page.getByPlaceholder('Enter your email address').fill('james@mailinator.com');\n" +
+    '\n' +
+    '  // submit\n' +
+    "  await page.getByRole('button', {\n" +
+    "    name: 'Send Reset Link'\n" +
+    '  }).click();\n' +
+    '\n' +
+    '  // verify success message\n' +
+    "  await expect(page.getByText('Password reset email sent!')).toBeVisible();\n" +
+    '\n' +
+    '  // back to login\n' +
+    "  await page.getByRole('link', {\n" +
+    "    name: 'Back to Login'\n" +
+    '  }).click();\n' +
+    '}',
+  test_tags: [],
+  test_started_at: '2026-03-18T18:27:33.103Z',
+  test_scope: 'auth/forgot-password.spec.js - Forgot Password Flow',
+  test_scopes: [],
+  test_rerun_name: ' -:OSX Sonoma-browserstack auth/forgot-password.spec.js Forgot Password Flow'
+}
+2026-03-18 23:57:34 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:57:34 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:57:34 - [32minfo[39m: getting screenshots results.
+2026-03-18 23:57:34 - [32minfo[39m: [GrpcClient] Sending LogCreatedEvent
+2026-03-18 23:57:34 - [32minfo[39m: [GrpcClient] LogCreatedEvent request successful
+2026-03-18 23:57:34 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:57:34 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:57:35 - [32minfo[39m: [PlaywrightDriverModule] testId: 626483fc77c4bb72c38c-bca5e627b4de5582fd72
+2026-03-18 23:57:35 - [32minfo[39m: [PlaywrightDriverModule] testData from onAfterTest: {
+  uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934',
+  test_framework_name: 'Playwright',
+  test_framework_version: '1.58.2',
+  test_logs: [],
+  test_hooks_finished: {},
+  test_hooks_started: {},
+  test_uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934',
+  test_result: 'pending',
+  automate_session_name: 'auth/login.spec.js - User Login',
+  test_file_path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/login.spec.js',
+  test_id: '626483fc77c4bb72c38c-bca5e627b4de5582fd72',
+  test_name: 'User Login',
+  test_location: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/login.spec.js:4',
+  test_code: 'async ({\n' +
+    '  page\n' +
+    '}) => {\n' +
+    '  const loginPage = new LoginPage(page);\n' +
+    '  await loginPage.navigate();\n' +
+    "  await loginPage.login('james@mailinator.com', 'Harin123');\n" +
+    '  // verify successful login\n' +
+    '  await expect(page).toHaveURL(/jobs/i);\n' +
+    '}',
+  test_tags: [],
+  test_started_at: '2026-03-18T18:27:04.832Z',
+  test_scope: 'auth/login.spec.js - User Login',
+  test_scopes: [],
+  test_rerun_name: ' -latest:Windows 11-browserstack auth/login.spec.js User Login',
+  attachments: [
+    {
+      name: 'screenshot',
+      path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-2/7d9f28f0572f264e09f23eeeff764ee4.png'
+    }
+  ]
+}
+2026-03-18 23:57:35 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:57:35 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:57:35 - [32minfo[39m: [Accessibility] afterTestHook state: accessibilityPlatform=false, bstackA11yShouldScan=true
+2026-03-18 23:57:35 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:35 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:57:35 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:57:35 - [32minfo[39m: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-03-18 23:57:35 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:35 - [32minfo[39m: [GrpcClient] Connected to gRPC server at unix:/tmp/sdk-platform-a6cac9c7-577b-4893-bf0c-51b8e62ac1e2.sock
+2026-03-18 23:57:35 - [32minfo[39m: [GrpcClient] Connecting bin session
+2026-03-18 23:57:35 - [32minfo[39m: [GrpcClient] ConnectBinSession successful
+2026-03-18 23:57:35 - [32minfo[39m: [BrowserstackCLI] loadModules: Loading modules
+2026-03-18 23:57:35 - [32minfo[39m: [BrowserstackCLI] loadModules: binSessionId=a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:35 - [32minfo[39m: [BrowserstackCLI] loading Modules.
+2026-03-18 23:57:35 - [32minfo[39m: [BrowserstackCLI] Accessibility success=false
+2026-03-18 23:57:35 - [32minfo[39m: [GrpcClient] Getting Playwright config
+2026-03-18 23:57:35 - [32minfo[39m: [GrpcClient] PlaywrightConfig request successful
+2026-03-18 23:57:35 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:57:35 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:57:35 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:35 - [32minfo[39m: [BrowserstackCLI] startChild: client and channel already exist, stopping here
+2026-03-18 23:57:35 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: created instance for target=9390:0, state=AutomationFrameworkState.CREATE
+2026-03-18 23:57:35 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: saved instance contextId=59d289e14ed813fd30b7ca453ab492412c835637c4c90322071d619bf2b5d777 target=9390:0
+2026-03-18 23:57:36 - [32minfo[39m: [PlaywrightDriverModule] testId: 9616be0d27b1aff1605d-726bcf7707eab01581f4
+2026-03-18 23:57:36 - [32minfo[39m: [PlaywrightDriverModule] testData from onAfterTest: {
+  uuid: '8f99045c-0918-4122-adaf-63912da5d87f',
+  test_framework_name: 'Playwright',
+  test_framework_version: '1.58.2',
+  test_logs: [],
+  test_hooks_finished: {},
+  test_hooks_started: {},
+  test_uuid: '8f99045c-0918-4122-adaf-63912da5d87f',
+  test_result: 'pending',
+  automate_session_name: 'auth/logout.spec.js - User Logout',
+  test_file_path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/logout.spec.js',
+  test_id: '9616be0d27b1aff1605d-726bcf7707eab01581f4',
+  test_name: 'User Logout',
+  test_location: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/logout.spec.js:4',
+  test_code: 'async ({\n' +
+    '  page\n' +
+    '}) => {\n' +
+    '  const loginPage = new LoginPage(page);\n' +
+    '  await loginPage.navigate();\n' +
+    "  await loginPage.login('james@mailinator.com', 'Harin123');\n" +
+    '\n' +
+    '  // open profile menu\n' +
+    `  await page.locator("//button[@class='relative flex items-center gap-3 px-4 py-2 bg-white border-2 border-gray-200 rounded-xl transition-all shadow-sm group']").click();\n` +
+    '\n' +
+    '  // click logout\n' +
+    "  await page.getByText('Log Out').click();\n" +
+    '\n' +
+    '  // handle confirmation dialog\n' +
+    `  await page.locator('span:has-text("Log Out")').first().click();\n` +
+    '}',
+  test_tags: [],
+  test_started_at: '2026-03-18T18:27:04.819Z',
+  test_scope: 'auth/logout.spec.js - User Logout',
+  test_scopes: [],
+  test_rerun_name: ' -latest:Windows 11-browserstack auth/logout.spec.js User Logout',
+  attachments: [
+    {
+      name: 'screenshot',
+      path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-3/ff417db54384147563c6eb810549647c.png'
+    }
+  ]
+}
+2026-03-18 23:57:36 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:57:36 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:57:36 - [32minfo[39m: getting screenshots results.
+2026-03-18 23:57:36 - [32minfo[39m: [GrpcClient] Sending LogCreatedEvent
+2026-03-18 23:57:36 - [32minfo[39m: [GrpcClient] LogCreatedEvent request successful
+2026-03-18 23:57:36 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:57:36 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:57:36 - [32minfo[39m: [Accessibility] afterTestHook state: accessibilityPlatform=false, bstackA11yShouldScan=true
+2026-03-18 23:57:36 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:36 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:57:36 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:57:36 - [32minfo[39m: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-03-18 23:57:37 - [32minfo[39m: [PlaywrightDriverModule] testId: 73efa870812f32394b81-db64ecc0d097a4d6c53f
+2026-03-18 23:57:37 - [32minfo[39m: [PlaywrightDriverModule] testData from onAfterTest: {
+  uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83',
+  test_framework_name: 'Playwright',
+  test_framework_version: '1.58.2',
+  test_logs: [],
+  test_hooks_finished: {},
+  test_hooks_started: {},
+  test_uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83',
+  test_result: 'pending',
+  automate_session_name: 'auth/invalid-login.spec.js - Invalid Login Attempt',
+  test_file_path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/invalid-login.spec.js',
+  test_id: '73efa870812f32394b81-db64ecc0d097a4d6c53f',
+  test_name: 'Invalid Login Attempt',
+  test_location: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/invalid-login.spec.js:4',
+  test_code: 'async ({\n' +
+    '  page\n' +
+    '}) => {\n' +
+    '  const loginPage = new LoginPage(page);\n' +
+    '  await loginPage.navigate();\n' +
+    "  await loginPage.login('invalid@email.com', 'wrongpassword');\n" +
+    '\n' +
+    '  // verify error message\n' +
+    "  await expect(page.getByText('Invalid email or password. Please check your credentials and try again.')).toBeVisible();\n" +
+    '}',
+  test_tags: [],
+  test_started_at: '2026-03-18T18:27:04.832Z',
+  test_scope: 'auth/invalid-login.spec.js - Invalid Login Attempt',
+  test_scopes: [],
+  test_rerun_name: ' -latest:Windows 11-browserstack auth/invalid-login.spec.js Invalid Login Attempt',
+  attachments: [
+    {
+      name: 'screenshot',
+      path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-1/5bb101e1a288ea6a6a510bcc3e2c93c7.png'
+    }
+  ]
+}
+2026-03-18 23:57:37 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:57:37 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:57:37 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:37 - [32minfo[39m: [GrpcClient] Connected to gRPC server at unix:/tmp/sdk-platform-a6cac9c7-577b-4893-bf0c-51b8e62ac1e2.sock
+2026-03-18 23:57:37 - [32minfo[39m: [GrpcClient] Connecting bin session
+2026-03-18 23:57:37 - [32minfo[39m: [GrpcClient] ConnectBinSession successful
+2026-03-18 23:57:37 - [32minfo[39m: [BrowserstackCLI] loadModules: Loading modules
+2026-03-18 23:57:37 - [32minfo[39m: [BrowserstackCLI] loadModules: binSessionId=a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:37 - [32minfo[39m: [BrowserstackCLI] loading Modules.
+2026-03-18 23:57:37 - [32minfo[39m: [BrowserstackCLI] Accessibility success=false
+2026-03-18 23:57:37 - [32minfo[39m: [GrpcClient] Getting Playwright config
+2026-03-18 23:57:37 - [32minfo[39m: [GrpcClient] PlaywrightConfig request successful
+2026-03-18 23:57:37 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:57:37 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:57:37 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:37 - [32minfo[39m: getting screenshots results.
+2026-03-18 23:57:37 - [32minfo[39m: [GrpcClient] Sending LogCreatedEvent
+2026-03-18 23:57:37 - [32minfo[39m: [BrowserstackCLI] startChild: client and channel already exist, stopping here
+2026-03-18 23:57:37 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: created instance for target=9393:0, state=AutomationFrameworkState.CREATE
+2026-03-18 23:57:37 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: saved instance contextId=6ec0c0fa89a8eb2b7a5a363fbd26432811422a6be692643efe8b01c050f48d65 target=9393:0
+2026-03-18 23:57:37 - [32minfo[39m: [GrpcClient] LogCreatedEvent request successful
+2026-03-18 23:57:37 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:57:37 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:57:37 - [32minfo[39m: getting screenshots results.
+2026-03-18 23:57:37 - [32minfo[39m: [GrpcClient] Sending LogCreatedEvent
+2026-03-18 23:57:37 - [32minfo[39m: [GrpcClient] LogCreatedEvent request successful
+2026-03-18 23:57:37 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:57:37 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:57:38 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:38 - [32minfo[39m: [GrpcClient] Connected to gRPC server at unix:/tmp/sdk-platform-a6cac9c7-577b-4893-bf0c-51b8e62ac1e2.sock
+2026-03-18 23:57:38 - [32minfo[39m: [GrpcClient] Connecting bin session
+2026-03-18 23:57:38 - [32minfo[39m: [GrpcClient] ConnectBinSession successful
+2026-03-18 23:57:38 - [32minfo[39m: [BrowserstackCLI] loadModules: Loading modules
+2026-03-18 23:57:38 - [32minfo[39m: [BrowserstackCLI] loadModules: binSessionId=a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:38 - [32minfo[39m: [BrowserstackCLI] loading Modules.
+2026-03-18 23:57:38 - [32minfo[39m: [BrowserstackCLI] Accessibility success=false
+2026-03-18 23:57:38 - [32minfo[39m: [GrpcClient] Getting Playwright config
+2026-03-18 23:57:38 - [32minfo[39m: [GrpcClient] PlaywrightConfig request successful
+2026-03-18 23:57:38 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:57:38 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:38 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:57:38 - [32minfo[39m: [Accessibility] afterTestHook state: accessibilityPlatform=false, bstackA11yShouldScan=true
+2026-03-18 23:57:38 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:38 - [32minfo[39m: [PlaywrightDriverModule] testId: 73efa870812f32394b81-8e6d927bc9b9962d9f45
+2026-03-18 23:57:38 - [32minfo[39m: [PlaywrightDriverModule] testData from onAfterTest: {
+  uuid: '7364eb14-65e9-470f-a7b7-f3aba16fcfc2',
+  test_framework_name: 'Playwright',
+  test_framework_version: '1.58.2',
+  test_logs: [],
+  test_hooks_finished: {},
+  test_hooks_started: {},
+  test_uuid: '7364eb14-65e9-470f-a7b7-f3aba16fcfc2',
+  test_result: 'pending',
+  automate_session_name: 'auth/invalid-login.spec.js - Invalid Login Attempt',
+  test_file_path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/invalid-login.spec.js',
+  test_id: '73efa870812f32394b81-8e6d927bc9b9962d9f45',
+  test_name: 'Invalid Login Attempt',
+  test_location: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/invalid-login.spec.js:4',
+  test_code: 'async ({\n' +
+    '  page\n' +
+    '}) => {\n' +
+    '  const loginPage = new LoginPage(page);\n' +
+    '  await loginPage.navigate();\n' +
+    "  await loginPage.login('invalid@email.com', 'wrongpassword');\n" +
+    '\n' +
+    '  // verify error message\n' +
+    "  await expect(page.getByText('Invalid email or password. Please check your credentials and try again.')).toBeVisible();\n" +
+    '}',
+  test_tags: [],
+  test_started_at: '2026-03-18T18:27:35.922Z',
+  test_scope: 'auth/invalid-login.spec.js - Invalid Login Attempt',
+  test_scopes: [],
+  test_rerun_name: ' -:OSX Sonoma-browserstack auth/invalid-login.spec.js Invalid Login Attempt'
+}
+2026-03-18 23:57:38 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:57:38 - [32minfo[39m: getting screenshots results.
+2026-03-18 23:57:38 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:57:38 - [32minfo[39m: [GrpcClient] Sending LogCreatedEvent
+2026-03-18 23:57:38 - [32minfo[39m: [GrpcClient] LogCreatedEvent request successful
+2026-03-18 23:57:38 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:57:38 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:57:38 - [32minfo[39m: [BrowserstackCLI] startChild: client and channel already exist, stopping here
+2026-03-18 23:57:38 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: created instance for target=9398:0, state=AutomationFrameworkState.CREATE
+2026-03-18 23:57:38 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: saved instance contextId=0d09f2311347e91d295cb5745da540bf96e52d2cec8ea1290a96806addb71e8c target=9398:0
+2026-03-18 23:57:39 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:39 - [32minfo[39m: [GrpcClient] Connected to gRPC server at unix:/tmp/sdk-platform-a6cac9c7-577b-4893-bf0c-51b8e62ac1e2.sock
+2026-03-18 23:57:39 - [32minfo[39m: [GrpcClient] Connecting bin session
+2026-03-18 23:57:39 - [32minfo[39m: [GrpcClient] ConnectBinSession successful
+2026-03-18 23:57:39 - [32minfo[39m: [BrowserstackCLI] loadModules: Loading modules
+2026-03-18 23:57:39 - [32minfo[39m: [BrowserstackCLI] loadModules: binSessionId=a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:39 - [32minfo[39m: [BrowserstackCLI] loading Modules.
+2026-03-18 23:57:39 - [32minfo[39m: [BrowserstackCLI] Accessibility success=false
+2026-03-18 23:57:39 - [32minfo[39m: [GrpcClient] Getting Playwright config
+2026-03-18 23:57:39 - [32minfo[39m: [GrpcClient] PlaywrightConfig request successful
+2026-03-18 23:57:39 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:57:39 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:39 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:57:39 - [32minfo[39m: [BrowserstackCLI] startChild: client and channel already exist, stopping here
+2026-03-18 23:57:39 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: created instance for target=9400:0, state=AutomationFrameworkState.CREATE
+2026-03-18 23:57:39 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: saved instance contextId=9d1d2ff95535444a4bab66a7774614231fd37aafdc445d83c83a340068078fbf target=9400:0
+2026-03-18 23:57:39 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:39 - [32minfo[39m: [GrpcClient] Connected to gRPC server at unix:/tmp/sdk-platform-a6cac9c7-577b-4893-bf0c-51b8e62ac1e2.sock
+2026-03-18 23:57:39 - [32minfo[39m: [GrpcClient] Connecting bin session
+2026-03-18 23:57:39 - [32minfo[39m: [GrpcClient] ConnectBinSession successful
+2026-03-18 23:57:39 - [32minfo[39m: [BrowserstackCLI] loadModules: Loading modules
+2026-03-18 23:57:39 - [32minfo[39m: [BrowserstackCLI] loadModules: binSessionId=a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:39 - [32minfo[39m: [BrowserstackCLI] loading Modules.
+2026-03-18 23:57:39 - [32minfo[39m: [BrowserstackCLI] Accessibility success=false
+2026-03-18 23:57:39 - [32minfo[39m: [GrpcClient] Getting Playwright config
+2026-03-18 23:57:39 - [32minfo[39m: [GrpcClient] PlaywrightConfig request successful
+2026-03-18 23:57:39 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:57:39 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:39 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:57:39 - [32minfo[39m: [BrowserstackCLI] startChild: client and channel already exist, stopping here
+2026-03-18 23:57:39 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: created instance for target=9402:0, state=AutomationFrameworkState.CREATE
+2026-03-18 23:57:39 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: saved instance contextId=af80c7f1639ce09932c322fbdb9db819721288256a92b48c69546e07abf9bcbb target=9402:0
+2026-03-18 23:57:39 - [32minfo[39m: [Accessibility] afterTestHook state: accessibilityPlatform=false, bstackA11yShouldScan=true
+2026-03-18 23:57:39 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:39 - [32minfo[39m: [PlaywrightDriverModule] testId: 626483fc77c4bb72c38c-3e4f935c8e2ebba857da
+2026-03-18 23:57:39 - [32minfo[39m: [PlaywrightDriverModule] testData from onAfterTest: {
+  uuid: '075d2314-29ac-4b78-b875-03cacea500d2',
+  test_framework_name: 'Playwright',
+  test_framework_version: '1.58.2',
+  test_logs: [],
+  test_hooks_finished: {},
+  test_hooks_started: {},
+  test_uuid: '075d2314-29ac-4b78-b875-03cacea500d2',
+  test_result: 'pending',
+  automate_session_name: 'auth/login.spec.js - User Login',
+  test_file_path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/login.spec.js',
+  test_id: '626483fc77c4bb72c38c-3e4f935c8e2ebba857da',
+  test_name: 'User Login',
+  test_location: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/login.spec.js:4',
+  test_code: 'async ({\n' +
+    '  page\n' +
+    '}) => {\n' +
+    '  const loginPage = new LoginPage(page);\n' +
+    '  await loginPage.navigate();\n' +
+    "  await loginPage.login('james@mailinator.com', 'Harin123');\n" +
+    '  // verify successful login\n' +
+    '  await expect(page).toHaveURL(/jobs/i);\n' +
+    '}',
+  test_tags: [],
+  test_started_at: '2026-03-18T18:27:37.124Z',
+  test_scope: 'auth/login.spec.js - User Login',
+  test_scopes: [],
+  test_rerun_name: ' -:OSX Sonoma-browserstack auth/login.spec.js User Login'
+}
+2026-03-18 23:57:39 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:57:39 - [32minfo[39m: getting screenshots results.
+2026-03-18 23:57:39 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:57:39 - [32minfo[39m: [GrpcClient] Sending LogCreatedEvent
+2026-03-18 23:57:39 - [32minfo[39m: [GrpcClient] LogCreatedEvent request successful
+2026-03-18 23:57:39 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:57:39 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:57:40 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:40 - [32minfo[39m: [GrpcClient] Connected to gRPC server at unix:/tmp/sdk-platform-a6cac9c7-577b-4893-bf0c-51b8e62ac1e2.sock
+2026-03-18 23:57:40 - [32minfo[39m: [GrpcClient] Connecting bin session
+2026-03-18 23:57:40 - [32minfo[39m: [GrpcClient] ConnectBinSession successful
+2026-03-18 23:57:40 - [32minfo[39m: [BrowserstackCLI] loadModules: Loading modules
+2026-03-18 23:57:40 - [32minfo[39m: [BrowserstackCLI] loadModules: binSessionId=a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:40 - [32minfo[39m: [BrowserstackCLI] loading Modules.
+2026-03-18 23:57:40 - [32minfo[39m: [BrowserstackCLI] Accessibility success=false
+2026-03-18 23:57:40 - [32minfo[39m: [GrpcClient] Getting Playwright config
+2026-03-18 23:57:40 - [32minfo[39m: [GrpcClient] PlaywrightConfig request successful
+2026-03-18 23:57:40 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:57:40 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:57:40 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:40 - [32minfo[39m: [BrowserstackCLI] startChild: client and channel already exist, stopping here
+2026-03-18 23:57:40 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: created instance for target=9407:0, state=AutomationFrameworkState.CREATE
+2026-03-18 23:57:40 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: saved instance contextId=6e7e12edb9dbb659771ea39c1d7cd13904a88ef5d8c716288c030648cb674521 target=9407:0
+2026-03-18 23:57:40 - [32minfo[39m: [Accessibility] afterTestHook state: accessibilityPlatform=false, bstackA11yShouldScan=true
+2026-03-18 23:57:40 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:40 - [32minfo[39m: [PlaywrightDriverModule] testId: 9616be0d27b1aff1605d-d1fc29c9c752d4a1fbae
+2026-03-18 23:57:40 - [32minfo[39m: [PlaywrightDriverModule] testData from onAfterTest: {
+  uuid: '92a35cf0-c707-4b16-a0f8-aed36b95bf1c',
+  test_framework_name: 'Playwright',
+  test_framework_version: '1.58.2',
+  test_logs: [],
+  test_hooks_finished: {},
+  test_hooks_started: {},
+  test_uuid: '92a35cf0-c707-4b16-a0f8-aed36b95bf1c',
+  test_result: 'pending',
+  automate_session_name: 'auth/logout.spec.js - User Logout',
+  test_file_path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/logout.spec.js',
+  test_id: '9616be0d27b1aff1605d-d1fc29c9c752d4a1fbae',
+  test_name: 'User Logout',
+  test_location: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/logout.spec.js:4',
+  test_code: 'async ({\n' +
+    '  page\n' +
+    '}) => {\n' +
+    '  const loginPage = new LoginPage(page);\n' +
+    '  await loginPage.navigate();\n' +
+    "  await loginPage.login('james@mailinator.com', 'Harin123');\n" +
+    '\n' +
+    '  // open profile menu\n' +
+    `  await page.locator("//button[@class='relative flex items-center gap-3 px-4 py-2 bg-white border-2 border-gray-200 rounded-xl transition-all shadow-sm group']").click();\n` +
+    '\n' +
+    '  // click logout\n' +
+    "  await page.getByText('Log Out').click();\n" +
+    '\n' +
+    '  // handle confirmation dialog\n' +
+    `  await page.locator('span:has-text("Log Out")').first().click();\n` +
+    '}',
+  test_tags: [],
+  test_started_at: '2026-03-18T18:27:38.169Z',
+  test_scope: 'auth/logout.spec.js - User Logout',
+  test_scopes: [],
+  test_rerun_name: ' -:OSX Sonoma-browserstack auth/logout.spec.js User Logout'
+}
+2026-03-18 23:57:40 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:57:40 - [32minfo[39m: getting screenshots results.
+2026-03-18 23:57:40 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:57:40 - [32minfo[39m: [GrpcClient] Sending LogCreatedEvent
+2026-03-18 23:57:40 - [32minfo[39m: [GrpcClient] LogCreatedEvent request successful
+2026-03-18 23:57:40 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:57:40 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:57:41 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:41 - [32minfo[39m: [GrpcClient] Connected to gRPC server at unix:/tmp/sdk-platform-a6cac9c7-577b-4893-bf0c-51b8e62ac1e2.sock
+2026-03-18 23:57:41 - [32minfo[39m: [GrpcClient] Connecting bin session
+2026-03-18 23:57:41 - [32minfo[39m: [GrpcClient] ConnectBinSession successful
+2026-03-18 23:57:41 - [32minfo[39m: [BrowserstackCLI] loadModules: Loading modules
+2026-03-18 23:57:41 - [32minfo[39m: [BrowserstackCLI] loadModules: binSessionId=a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:41 - [32minfo[39m: [BrowserstackCLI] loading Modules.
+2026-03-18 23:57:41 - [32minfo[39m: [BrowserstackCLI] Accessibility success=false
+2026-03-18 23:57:41 - [32minfo[39m: [GrpcClient] Getting Playwright config
+2026-03-18 23:57:41 - [32minfo[39m: [GrpcClient] PlaywrightConfig request successful
+2026-03-18 23:57:41 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:57:41 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:57:41 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:57:41 - [32minfo[39m: [BrowserstackCLI] startChild: client and channel already exist, stopping here
+2026-03-18 23:57:41 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: created instance for target=9410:0, state=AutomationFrameworkState.CREATE
+2026-03-18 23:57:41 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: saved instance contextId=e290f50eaf55ef174cd788677fb550f108011890ed6ec2484cff1998a5f026e8 target=9410:0
+2026-03-18 23:57:57 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:57 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:57 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:57 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:57 - [32minfo[39m: [GrpcClient] Sending DriverInit
+2026-03-18 23:57:57 - [32minfo[39m: [GrpcClient] Sending DriverInit
+2026-03-18 23:57:57 - [32minfo[39m: [GrpcClient] DriverInit request successful
+2026-03-18 23:57:57 - [32minfo[39m: [GrpcClient] DriverInit request successful
+2026-03-18 23:57:58 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:58 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:59 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:59 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:57:59 - [32minfo[39m: [GrpcClient] Sending DriverInit
+2026-03-18 23:57:59 - [32minfo[39m: [GrpcClient] DriverInit request successful
+2026-03-18 23:58:00 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:00 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:00 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:00 - [32minfo[39m: [GrpcClient] Sending DriverInit
+2026-03-18 23:58:00 - [32minfo[39m: [GrpcClient] DriverInit request successful
+2026-03-18 23:58:00 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:00 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:58:00 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:58:00 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:00 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:58:00 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:58:00 - [32minfo[39m: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-03-18 23:58:00 - [32minfo[39m: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-03-18 23:58:01 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:03 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:03 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:58:03 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:58:03 - [32minfo[39m: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-03-18 23:58:03 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:03 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:58:03 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:58:03 - [32minfo[39m: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-03-18 23:58:18 - [32minfo[39m: [Accessibility] afterTestHook state: accessibilityPlatform=false, bstackA11yShouldScan=true
+2026-03-18 23:58:18 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:18 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:58:18 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:58:18 - [32minfo[39m: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-03-18 23:58:18 - [32minfo[39m: [PlaywrightDriverModule] testId: 73efa870812f32394b81-ea2cc09ce108ec2655b0
+2026-03-18 23:58:18 - [32minfo[39m: [PlaywrightDriverModule] testData from onAfterTest: {
+  uuid: '6fe6f94f-b43c-44b4-a3ec-d86213e8f3ff',
+  test_framework_name: 'Playwright',
+  test_framework_version: '1.58.2',
+  test_logs: [],
+  test_hooks_finished: {},
+  test_hooks_started: {},
+  test_uuid: '6fe6f94f-b43c-44b4-a3ec-d86213e8f3ff',
+  test_result: 'pending',
+  automate_session_name: 'auth/invalid-login.spec.js - Invalid Login Attempt',
+  test_file_path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/invalid-login.spec.js',
+  test_id: '73efa870812f32394b81-ea2cc09ce108ec2655b0',
+  test_name: 'Invalid Login Attempt',
+  test_location: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/invalid-login.spec.js:4',
+  test_code: 'async ({\n' +
+    '  page\n' +
+    '}) => {\n' +
+    '  const loginPage = new LoginPage(page);\n' +
+    '  await loginPage.navigate();\n' +
+    "  await loginPage.login('invalid@email.com', 'wrongpassword');\n" +
+    '\n' +
+    '  // verify error message\n' +
+    "  await expect(page.getByText('Invalid email or password. Please check your credentials and try again.')).toBeVisible();\n" +
+    '}',
+  test_tags: [],
+  test_started_at: '2026-03-18T18:27:39.299Z',
+  test_scope: 'auth/invalid-login.spec.js - Invalid Login Attempt',
+  test_scopes: [],
+  test_rerun_name: ' -iPhone 15:17-browserstack-mobile auth/invalid-login.spec.js Invalid Login Attempt',
+  attachments: [
+    {
+      name: 'screenshot',
+      path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-9/1ce1738c7886fc6cc6cc35722a035181.png'
+    }
+  ]
+}
+2026-03-18 23:58:18 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:58:18 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:58:19 - [32minfo[39m: [Accessibility] afterTestHook state: accessibilityPlatform=false, bstackA11yShouldScan=true
+2026-03-18 23:58:19 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:19 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:58:19 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:58:19 - [32minfo[39m: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-03-18 23:58:19 - [32minfo[39m: [Accessibility] afterTestHook state: accessibilityPlatform=false, bstackA11yShouldScan=true
+2026-03-18 23:58:19 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:19 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:58:19 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:58:19 - [32minfo[39m: getting screenshots results.
+2026-03-18 23:58:19 - [32minfo[39m: getScreenshots: screenshot file not found, skipping attachment: /Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-9/1ce1738c7886fc6cc6cc35722a035181.png
+2026-03-18 23:58:19 - [32minfo[39m: [GrpcClient] Sending LogCreatedEvent
+2026-03-18 23:58:19 - [32minfo[39m: [GrpcClient] LogCreatedEvent request successful
+2026-03-18 23:58:19 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:58:19 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:58:19 - [32minfo[39m: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-03-18 23:58:19 - [32minfo[39m: [PlaywrightDriverModule] testId: 626483fc77c4bb72c38c-b2f3a100e7195f4cced8
+2026-03-18 23:58:19 - [32minfo[39m: [PlaywrightDriverModule] testData from onAfterTest: {
+  uuid: '39956c75-728f-4ac3-93f8-df9f6f926ac4',
+  test_framework_name: 'Playwright',
+  test_framework_version: '1.58.2',
+  test_logs: [],
+  test_hooks_finished: {},
+  test_hooks_started: {},
+  test_uuid: '39956c75-728f-4ac3-93f8-df9f6f926ac4',
+  test_result: 'pending',
+  automate_session_name: 'auth/login.spec.js - User Login',
+  test_file_path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/login.spec.js',
+  test_id: '626483fc77c4bb72c38c-b2f3a100e7195f4cced8',
+  test_name: 'User Login',
+  test_location: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/login.spec.js:4',
+  test_code: 'async ({\n' +
+    '  page\n' +
+    '}) => {\n' +
+    '  const loginPage = new LoginPage(page);\n' +
+    '  await loginPage.navigate();\n' +
+    "  await loginPage.login('james@mailinator.com', 'Harin123');\n" +
+    '  // verify successful login\n' +
+    '  await expect(page).toHaveURL(/jobs/i);\n' +
+    '}',
+  test_tags: [],
+  test_started_at: '2026-03-18T18:27:40.335Z',
+  test_scope: 'auth/login.spec.js - User Login',
+  test_scopes: [],
+  test_rerun_name: ' -iPhone 15:17-browserstack-mobile auth/login.spec.js User Login',
+  attachments: [
+    {
+      name: 'screenshot',
+      path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-10/e7f98e1ed937e41475f7294d8783e962.png'
+    }
+  ]
+}
+2026-03-18 23:58:19 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:58:19 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:58:20 - [32minfo[39m: [PlaywrightDriverModule] testId: 2ba00858970829ed2f51-353af54e82f4f350825f
+2026-03-18 23:58:20 - [32minfo[39m: [PlaywrightDriverModule] testData from onAfterTest: {
+  uuid: '202b6081-b36d-42b8-bbb3-b36857a4ff9b',
+  test_framework_name: 'Playwright',
+  test_framework_version: '1.58.2',
+  test_logs: [],
+  test_hooks_finished: {},
+  test_hooks_started: {},
+  test_uuid: '202b6081-b36d-42b8-bbb3-b36857a4ff9b',
+  test_result: 'pending',
+  automate_session_name: 'auth/forgot-password.spec.js - Forgot Password Flow',
+  test_file_path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/forgot-password.spec.js',
+  test_id: '2ba00858970829ed2f51-353af54e82f4f350825f',
+  test_name: 'Forgot Password Flow',
+  test_location: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/forgot-password.spec.js:3',
+  test_code: 'async ({\n' +
+    '  page\n' +
+    '}) => {\n' +
+    "  await page.goto('https://tgn-staging.staffbot.com/');\n" +
+    '\n' +
+    '  // open login\n' +
+    "  await page.getByRole('link', {\n" +
+    "    name: 'Login or Create Account'\n" +
+    '  }).click();\n' +
+    "  await page.getByRole('link', {\n" +
+    "    name: 'Sign in here'\n" +
+    '  }).click();\n' +
+    '\n' +
+    '  // click forgot password\n' +
+    "  await page.getByText('Forgot your password? →', {\n" +
+    '    exact: true\n' +
+    '  }).click();\n' +
+    '\n' +
+    '  // enter email\n' +
+    "  await page.getByPlaceholder('Enter your email address').fill('james@mailinator.com');\n" +
+    '\n' +
+    '  // submit\n' +
+    "  await page.getByRole('button', {\n" +
+    "    name: 'Send Reset Link'\n" +
+    '  }).click();\n' +
+    '\n' +
+    '  // verify success message\n' +
+    "  await expect(page.getByText('Password reset email sent!')).toBeVisible();\n" +
+    '\n' +
+    '  // back to login\n' +
+    "  await page.getByRole('link', {\n" +
+    "    name: 'Back to Login'\n" +
+    '  }).click();\n' +
+    '}',
+  test_tags: [],
+  test_started_at: '2026-03-18T18:27:39.171Z',
+  test_scope: 'auth/forgot-password.spec.js - Forgot Password Flow',
+  test_scopes: [],
+  test_rerun_name: ' -iPhone 15:17-browserstack-mobile auth/forgot-password.spec.js Forgot Password Flow',
+  attachments: [
+    {
+      name: 'screenshot',
+      path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-8/1858c5e8daf8f582800a5b616ed71194.png'
+    }
+  ]
+}
+2026-03-18 23:58:20 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:58:20 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:58:20 - [32minfo[39m: getting screenshots results.
+2026-03-18 23:58:20 - [32minfo[39m: getScreenshots: screenshot file not found, skipping attachment: /Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-10/e7f98e1ed937e41475f7294d8783e962.png
+2026-03-18 23:58:20 - [32minfo[39m: [GrpcClient] Sending LogCreatedEvent
+2026-03-18 23:58:20 - [32minfo[39m: [GrpcClient] LogCreatedEvent request successful
+2026-03-18 23:58:20 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:58:20 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:58:20 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:58:20 - [32minfo[39m: [GrpcClient] Connected to gRPC server at unix:/tmp/sdk-platform-a6cac9c7-577b-4893-bf0c-51b8e62ac1e2.sock
+2026-03-18 23:58:20 - [32minfo[39m: [GrpcClient] Connecting bin session
+2026-03-18 23:58:20 - [32minfo[39m: [GrpcClient] ConnectBinSession successful
+2026-03-18 23:58:20 - [32minfo[39m: getting screenshots results.
+2026-03-18 23:58:20 - [32minfo[39m: getScreenshots: screenshot file not found, skipping attachment: /Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-8/1858c5e8daf8f582800a5b616ed71194.png
+2026-03-18 23:58:20 - [32minfo[39m: [GrpcClient] Sending LogCreatedEvent
+2026-03-18 23:58:20 - [32minfo[39m: [GrpcClient] LogCreatedEvent request successful
+2026-03-18 23:58:20 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:58:20 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:58:20 - [32minfo[39m: [BrowserstackCLI] loadModules: Loading modules
+2026-03-18 23:58:20 - [32minfo[39m: [BrowserstackCLI] loadModules: binSessionId=a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:58:20 - [32minfo[39m: [BrowserstackCLI] loading Modules.
+2026-03-18 23:58:20 - [32minfo[39m: [BrowserstackCLI] Accessibility success=false
+2026-03-18 23:58:20 - [32minfo[39m: [GrpcClient] Getting Playwright config
+2026-03-18 23:58:20 - [32minfo[39m: [GrpcClient] PlaywrightConfig request successful
+2026-03-18 23:58:20 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:58:20 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:58:20 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:58:20 - [32minfo[39m: [BrowserstackCLI] startChild: client and channel already exist, stopping here
+2026-03-18 23:58:20 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: created instance for target=9427:0, state=AutomationFrameworkState.CREATE
+2026-03-18 23:58:20 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: saved instance contextId=95b3590fb6706fff469fb202f8856bc3fc610c217467c32bf725127a750255f5 target=9427:0
+2026-03-18 23:58:21 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:58:21 - [32minfo[39m: [GrpcClient] Connected to gRPC server at unix:/tmp/sdk-platform-a6cac9c7-577b-4893-bf0c-51b8e62ac1e2.sock
+2026-03-18 23:58:21 - [32minfo[39m: [GrpcClient] Connecting bin session
+2026-03-18 23:58:21 - [32minfo[39m: [GrpcClient] ConnectBinSession successful
+2026-03-18 23:58:21 - [32minfo[39m: [BrowserstackCLI] loadModules: Loading modules
+2026-03-18 23:58:21 - [32minfo[39m: [BrowserstackCLI] loadModules: binSessionId=a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:58:21 - [32minfo[39m: [BrowserstackCLI] loading Modules.
+2026-03-18 23:58:21 - [32minfo[39m: [BrowserstackCLI] Accessibility success=false
+2026-03-18 23:58:21 - [32minfo[39m: [GrpcClient] Getting Playwright config
+2026-03-18 23:58:21 - [32minfo[39m: [GrpcClient] PlaywrightConfig request successful
+2026-03-18 23:58:21 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:58:21 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:58:21 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:58:21 - [32minfo[39m: [BrowserstackCLI] startChild: client and channel already exist, stopping here
+2026-03-18 23:58:21 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: created instance for target=9429:0, state=AutomationFrameworkState.CREATE
+2026-03-18 23:58:21 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: saved instance contextId=1d14bd348c600ae6903713cc76f01942db0ad4a2ae1a75c0fc0b9a2fdc0d0e29 target=9429:0
+2026-03-18 23:58:22 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:58:22 - [32minfo[39m: [GrpcClient] Connected to gRPC server at unix:/tmp/sdk-platform-a6cac9c7-577b-4893-bf0c-51b8e62ac1e2.sock
+2026-03-18 23:58:22 - [32minfo[39m: [GrpcClient] Connecting bin session
+2026-03-18 23:58:22 - [32minfo[39m: [GrpcClient] ConnectBinSession successful
+2026-03-18 23:58:22 - [32minfo[39m: [BrowserstackCLI] loadModules: Loading modules
+2026-03-18 23:58:22 - [32minfo[39m: [BrowserstackCLI] loadModules: binSessionId=a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:58:22 - [32minfo[39m: [BrowserstackCLI] loading Modules.
+2026-03-18 23:58:22 - [32minfo[39m: [BrowserstackCLI] Accessibility success=false
+2026-03-18 23:58:22 - [32minfo[39m: [GrpcClient] Getting Playwright config
+2026-03-18 23:58:22 - [32minfo[39m: [GrpcClient] PlaywrightConfig request successful
+2026-03-18 23:58:22 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:58:22 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:58:22 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:58:22 - [32minfo[39m: [BrowserstackCLI] startChild: client and channel already exist, stopping here
+2026-03-18 23:58:22 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: created instance for target=9431:0, state=AutomationFrameworkState.CREATE
+2026-03-18 23:58:22 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: saved instance contextId=12669f453f15847c65a00e56db1cabad6804ee06e70a2204b9c9cd2729f3e96b target=9431:0
+2026-03-18 23:58:30 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:30 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:30 - [32minfo[39m: [GrpcClient] Sending DriverInit
+2026-03-18 23:58:30 - [32minfo[39m: [GrpcClient] DriverInit request successful
+2026-03-18 23:58:30 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:30 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:30 - [32minfo[39m: [GrpcClient] Sending DriverInit
+2026-03-18 23:58:30 - [32minfo[39m: [GrpcClient] DriverInit request successful
+2026-03-18 23:58:30 - [32minfo[39m: [Accessibility] afterTestHook state: accessibilityPlatform=false, bstackA11yShouldScan=true
+2026-03-18 23:58:30 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:30 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:58:30 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:58:31 - [32minfo[39m: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-03-18 23:58:31 - [32minfo[39m: [PlaywrightDriverModule] testId: 9616be0d27b1aff1605d-6d7039c1015baf4a9132
+2026-03-18 23:58:31 - [32minfo[39m: [PlaywrightDriverModule] testData from onAfterTest: {
+  uuid: 'ce47a1c6-ad14-43c6-8389-215de1652f10',
+  test_framework_name: 'Playwright',
+  test_framework_version: '1.58.2',
+  test_logs: [],
+  test_hooks_finished: {},
+  test_hooks_started: {},
+  test_uuid: 'ce47a1c6-ad14-43c6-8389-215de1652f10',
+  test_result: 'pending',
+  automate_session_name: 'auth/logout.spec.js - User Logout',
+  test_file_path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/logout.spec.js',
+  test_id: '9616be0d27b1aff1605d-6d7039c1015baf4a9132',
+  test_name: 'User Logout',
+  test_location: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/logout.spec.js:4',
+  test_code: 'async ({\n' +
+    '  page\n' +
+    '}) => {\n' +
+    '  const loginPage = new LoginPage(page);\n' +
+    '  await loginPage.navigate();\n' +
+    "  await loginPage.login('james@mailinator.com', 'Harin123');\n" +
+    '\n' +
+    '  // open profile menu\n' +
+    `  await page.locator("//button[@class='relative flex items-center gap-3 px-4 py-2 bg-white border-2 border-gray-200 rounded-xl transition-all shadow-sm group']").click();\n` +
+    '\n' +
+    '  // click logout\n' +
+    "  await page.getByText('Log Out').click();\n" +
+    '\n' +
+    '  // handle confirmation dialog\n' +
+    `  await page.locator('span:has-text("Log Out")').first().click();\n` +
+    '}',
+  test_tags: [],
+  test_started_at: '2026-03-18T18:27:41.599Z',
+  test_scope: 'auth/logout.spec.js - User Logout',
+  test_scopes: [],
+  test_rerun_name: ' -iPhone 15:17-browserstack-mobile auth/logout.spec.js User Logout',
+  attachments: [
+    {
+      name: 'screenshot',
+      path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-11/69275aec88881a069d16270a80e33cb4.png'
+    }
+  ]
+}
+2026-03-18 23:58:31 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:58:31 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:58:31 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:31 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:31 - [32minfo[39m: [GrpcClient] Sending DriverInit
+2026-03-18 23:58:31 - [32minfo[39m: [GrpcClient] DriverInit request successful
+2026-03-18 23:58:31 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:32 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:32 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:32 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:58:32 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:58:32 - [32minfo[39m: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-03-18 23:58:32 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:32 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:58:32 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:58:32 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:32 - [32minfo[39m: getting screenshots results.
+2026-03-18 23:58:32 - [32minfo[39m: getScreenshots: screenshot file not found, skipping attachment: /Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-11/69275aec88881a069d16270a80e33cb4.png
+2026-03-18 23:58:32 - [32minfo[39m: [GrpcClient] Sending LogCreatedEvent
+2026-03-18 23:58:32 - [32minfo[39m: [GrpcClient] LogCreatedEvent request successful
+2026-03-18 23:58:32 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:58:32 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:58:32 - [32minfo[39m: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-03-18 23:58:32 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:32 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:58:32 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:58:33 - [32minfo[39m: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-03-18 23:58:33 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:58:33 - [32minfo[39m: [GrpcClient] Connected to gRPC server at unix:/tmp/sdk-platform-a6cac9c7-577b-4893-bf0c-51b8e62ac1e2.sock
+2026-03-18 23:58:33 - [32minfo[39m: [GrpcClient] Connecting bin session
+2026-03-18 23:58:33 - [32minfo[39m: [GrpcClient] ConnectBinSession successful
+2026-03-18 23:58:33 - [32minfo[39m: [BrowserstackCLI] loadModules: Loading modules
+2026-03-18 23:58:33 - [32minfo[39m: [BrowserstackCLI] loadModules: binSessionId=a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:58:33 - [32minfo[39m: [BrowserstackCLI] loading Modules.
+2026-03-18 23:58:33 - [32minfo[39m: [BrowserstackCLI] Accessibility success=false
+2026-03-18 23:58:33 - [32minfo[39m: [GrpcClient] Getting Playwright config
+2026-03-18 23:58:33 - [32minfo[39m: [GrpcClient] PlaywrightConfig request successful
+2026-03-18 23:58:33 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:58:33 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:58:33 - [32minfo[39m: [BrowserstackCLI] Starting as child process with session ID: a6cac9c7-577b-4893-bf0c-51b8e62ac1e2
+2026-03-18 23:58:33 - [32minfo[39m: [BrowserstackCLI] startChild: client and channel already exist, stopping here
+2026-03-18 23:58:33 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: created instance for target=9444:0, state=AutomationFrameworkState.CREATE
+2026-03-18 23:58:33 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: saved instance contextId=e5b7b413eb8102ab87be2738397948d0cc5c3b8d7a76bf3e54967311d5900b5d target=9444:0
+2026-03-18 23:58:44 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:44 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:44 - [32minfo[39m: [GrpcClient] Sending DriverInit
+2026-03-18 23:58:44 - [32minfo[39m: [GrpcClient] DriverInit request successful
+2026-03-18 23:58:56 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:56 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:58:56 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:58:56 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:58:56 - [32minfo[39m: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-03-18 23:59:05 - [32minfo[39m: [Accessibility] afterTestHook state: accessibilityPlatform=undefined, bstackA11yShouldScan=true
+2026-03-18 23:59:05 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:59:05 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:59:05 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:59:05 - [32minfo[39m: [Accessibility] afterTestHook state: accessibilityPlatform=undefined, bstackA11yShouldScan=true
+2026-03-18 23:59:05 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:59:05 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:59:05 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:59:06 - [32minfo[39m: [Accessibility] afterTestHook state: accessibilityPlatform=undefined, bstackA11yShouldScan=true
+2026-03-18 23:59:06 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:59:06 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:59:06 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:59:06 - [32minfo[39m: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-03-18 23:59:06 - [32minfo[39m: [PlaywrightDriverModule] testId: 626483fc77c4bb72c38c-2909b992bed97226b3dc
+2026-03-18 23:59:06 - [32minfo[39m: [PlaywrightDriverModule] testData from onAfterTest: {
+  uuid: 'c8782d4b-0e0b-49be-a050-934befd036d8',
+  test_framework_name: 'Playwright',
+  test_framework_version: '1.58.2',
+  test_logs: [],
+  test_hooks_finished: {},
+  test_hooks_started: {},
+  test_uuid: 'c8782d4b-0e0b-49be-a050-934befd036d8',
+  test_result: 'pending',
+  automate_session_name: 'auth/login.spec.js - User Login',
+  test_file_path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/login.spec.js',
+  test_id: '626483fc77c4bb72c38c-2909b992bed97226b3dc',
+  test_name: 'User Login',
+  test_location: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/login.spec.js:4',
+  test_code: 'async ({\n' +
+    '  page\n' +
+    '}) => {\n' +
+    '  const loginPage = new LoginPage(page);\n' +
+    '  await loginPage.navigate();\n' +
+    "  await loginPage.login('james@mailinator.com', 'Harin123');\n" +
+    '  // verify successful login\n' +
+    '  await expect(page).toHaveURL(/jobs/i);\n' +
+    '}',
+  test_tags: [],
+  test_started_at: '2026-03-18T18:28:22.207Z',
+  test_scope: 'auth/login.spec.js - User Login',
+  test_scopes: [],
+  test_rerun_name: ' -Samsung Galaxy S23:13-browserstack-mobile auth/login.spec.js User Login',
+  attachments: [
+    {
+      name: 'screenshot',
+      path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-14/ef4e3b2ae3f4f2302f971115fc4be04a.png'
+    },
+    {
+      name: 'screenshot',
+      path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-14/177ac69b7446f8f29068761f704b950b.png'
+    },
+    {
+      name: 'screenshot',
+      path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-14/06a9c6943f4ec1d8ad60f7c59a1d5135.png'
+    }
+  ]
+}
+2026-03-18 23:59:06 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:59:06 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:59:12 - [32minfo[39m: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-03-18 23:59:12 - [32minfo[39m: [PlaywrightDriverModule] testId: 2ba00858970829ed2f51-77625d4f651ef96e8483
+2026-03-18 23:59:12 - [32minfo[39m: [PlaywrightDriverModule] testData from onAfterTest: {
+  uuid: '73bb00aa-758e-4e20-b08c-bec5e3fde036',
+  test_framework_name: 'Playwright',
+  test_framework_version: '1.58.2',
+  test_logs: [],
+  test_hooks_finished: {},
+  test_hooks_started: {},
+  test_uuid: '73bb00aa-758e-4e20-b08c-bec5e3fde036',
+  test_result: 'pending',
+  automate_session_name: 'auth/forgot-password.spec.js - Forgot Password Flow',
+  test_file_path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/forgot-password.spec.js',
+  test_id: '2ba00858970829ed2f51-77625d4f651ef96e8483',
+  test_name: 'Forgot Password Flow',
+  test_location: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/forgot-password.spec.js:3',
+  test_code: 'async ({\n' +
+    '  page\n' +
+    '}) => {\n' +
+    "  await page.goto('https://tgn-staging.staffbot.com/');\n" +
+    '\n' +
+    '  // open login\n' +
+    "  await page.getByRole('link', {\n" +
+    "    name: 'Login or Create Account'\n" +
+    '  }).click();\n' +
+    "  await page.getByRole('link', {\n" +
+    "    name: 'Sign in here'\n" +
+    '  }).click();\n' +
+    '\n' +
+    '  // click forgot password\n' +
+    "  await page.getByText('Forgot your password? →', {\n" +
+    '    exact: true\n' +
+    '  }).click();\n' +
+    '\n' +
+    '  // enter email\n' +
+    "  await page.getByPlaceholder('Enter your email address').fill('james@mailinator.com');\n" +
+    '\n' +
+    '  // submit\n' +
+    "  await page.getByRole('button', {\n" +
+    "    name: 'Send Reset Link'\n" +
+    '  }).click();\n' +
+    '\n' +
+    '  // verify success message\n' +
+    "  await expect(page.getByText('Password reset email sent!')).toBeVisible();\n" +
+    '\n' +
+    '  // back to login\n' +
+    "  await page.getByRole('link', {\n" +
+    "    name: 'Back to Login'\n" +
+    '  }).click();\n' +
+    '}',
+  test_tags: [],
+  test_started_at: '2026-03-18T18:28:20.977Z',
+  test_scope: 'auth/forgot-password.spec.js - Forgot Password Flow',
+  test_scopes: [],
+  test_rerun_name: ' -Samsung Galaxy S23:13-browserstack-mobile auth/forgot-password.spec.js Forgot Password Flow',
+  attachments: [
+    {
+      name: 'screenshot',
+      path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-12/d60a1fa14a651bd047829ee283e707f6.png'
+    },
+    {
+      name: 'screenshot',
+      path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-12/d264058252b07aed85e25c9271c15c02.png'
+    },
+    {
+      name: 'screenshot',
+      path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-12/b5bb0f9fca4904784f7d8857dd19f4a4.png'
+    }
+  ]
+}
+2026-03-18 23:59:12 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:59:12 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:59:14 - [32minfo[39m: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-03-18 23:59:15 - [32minfo[39m: [PlaywrightDriverModule] testId: 73efa870812f32394b81-f4de0c339fb022b19a58
+2026-03-18 23:59:15 - [32minfo[39m: [PlaywrightDriverModule] testData from onAfterTest: {
+  uuid: 'e0b8a2c2-4dc4-4d12-a71f-3ea99ba8a169',
+  test_framework_name: 'Playwright',
+  test_framework_version: '1.58.2',
+  test_logs: [],
+  test_hooks_finished: {},
+  test_hooks_started: {},
+  test_uuid: 'e0b8a2c2-4dc4-4d12-a71f-3ea99ba8a169',
+  test_result: 'pending',
+  automate_session_name: 'auth/invalid-login.spec.js - Invalid Login Attempt',
+  test_file_path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/invalid-login.spec.js',
+  test_id: '73efa870812f32394b81-f4de0c339fb022b19a58',
+  test_name: 'Invalid Login Attempt',
+  test_location: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/invalid-login.spec.js:4',
+  test_code: 'async ({\n' +
+    '  page\n' +
+    '}) => {\n' +
+    '  const loginPage = new LoginPage(page);\n' +
+    '  await loginPage.navigate();\n' +
+    "  await loginPage.login('invalid@email.com', 'wrongpassword');\n" +
+    '\n' +
+    '  // verify error message\n' +
+    "  await expect(page.getByText('Invalid email or password. Please check your credentials and try again.')).toBeVisible();\n" +
+    '}',
+  test_tags: [],
+  test_started_at: '2026-03-18T18:28:21.881Z',
+  test_scope: 'auth/invalid-login.spec.js - Invalid Login Attempt',
+  test_scopes: [],
+  test_rerun_name: ' -Samsung Galaxy S23:13-browserstack-mobile auth/invalid-login.spec.js Invalid Login Attempt',
+  attachments: [
+    {
+      name: 'screenshot',
+      path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-13/c9ac932728330d646c0d9ae02cae9e2f.png'
+    },
+    {
+      name: 'screenshot',
+      path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-13/f0bb293b7159666d4b27ca32d3aae5d7.png'
+    },
+    {
+      name: 'screenshot',
+      path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-13/0d26317280c91b278a5c0a6c1a401ea6.png'
+    }
+  ]
+}
+2026-03-18 23:59:15 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:59:15 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:59:19 - [32minfo[39m: [Accessibility] afterTestHook state: accessibilityPlatform=undefined, bstackA11yShouldScan=true
+2026-03-18 23:59:19 - [32minfo[39m: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-03-18 23:59:19 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:59:19 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:59:20 - [32minfo[39m: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-03-18 23:59:20 - [32minfo[39m: [PlaywrightDriverModule] testId: 9616be0d27b1aff1605d-ac73c0f2ce7e5ce5a686
+2026-03-18 23:59:20 - [32minfo[39m: [PlaywrightDriverModule] testData from onAfterTest: {
+  uuid: 'dc7628da-2dfb-4393-a283-eaf6710fe251',
+  test_framework_name: 'Playwright',
+  test_framework_version: '1.58.2',
+  test_logs: [],
+  test_hooks_finished: {},
+  test_hooks_started: {},
+  test_uuid: 'dc7628da-2dfb-4393-a283-eaf6710fe251',
+  test_result: 'pending',
+  automate_session_name: 'auth/logout.spec.js - User Logout',
+  test_file_path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/logout.spec.js',
+  test_id: '9616be0d27b1aff1605d-ac73c0f2ce7e5ce5a686',
+  test_name: 'User Logout',
+  test_location: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/tests/auth/logout.spec.js:4',
+  test_code: 'async ({\n' +
+    '  page\n' +
+    '}) => {\n' +
+    '  const loginPage = new LoginPage(page);\n' +
+    '  await loginPage.navigate();\n' +
+    "  await loginPage.login('james@mailinator.com', 'Harin123');\n" +
+    '\n' +
+    '  // open profile menu\n' +
+    `  await page.locator("//button[@class='relative flex items-center gap-3 px-4 py-2 bg-white border-2 border-gray-200 rounded-xl transition-all shadow-sm group']").click();\n` +
+    '\n' +
+    '  // click logout\n' +
+    "  await page.getByText('Log Out').click();\n" +
+    '\n' +
+    '  // handle confirmation dialog\n' +
+    `  await page.locator('span:has-text("Log Out")').first().click();\n` +
+    '}',
+  test_tags: [],
+  test_started_at: '2026-03-18T18:28:33.865Z',
+  test_scope: 'auth/logout.spec.js - User Logout',
+  test_scopes: [],
+  test_rerun_name: ' -Samsung Galaxy S23:13-browserstack-mobile auth/logout.spec.js User Logout',
+  attachments: [
+    {
+      name: 'screenshot',
+      path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-15/0868ce6f3729e380a935f71c607df846.png'
+    },
+    {
+      name: 'screenshot',
+      path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-15/8108648bf7e11a68cfa8b580091b5c93.png'
+    },
+    {
+      name: 'screenshot',
+      path: '/Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-15/3fa283bdc6038807e17c89f96156f8d8.png'
+    }
+  ]
+}
+2026-03-18 23:59:20 - [32minfo[39m: [GrpcClient] Sending TestSessionEvent
+2026-03-18 23:59:20 - [32minfo[39m: [GrpcClient] TestSessionEvent request successful
+2026-03-18 23:59:37 - [32minfo[39m: getting screenshots results.
+2026-03-18 23:59:37 - [32minfo[39m: getScreenshots: screenshot file not found, skipping attachment: /Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-14/ef4e3b2ae3f4f2302f971115fc4be04a.png
+2026-03-18 23:59:37 - [32minfo[39m: getScreenshots: screenshot file not found, skipping attachment: /Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-14/177ac69b7446f8f29068761f704b950b.png
+2026-03-18 23:59:37 - [32minfo[39m: getScreenshots: screenshot file not found, skipping attachment: /Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-14/06a9c6943f4ec1d8ad60f7c59a1d5135.png
+2026-03-18 23:59:37 - [32minfo[39m: [GrpcClient] Sending LogCreatedEvent
+2026-03-18 23:59:37 - [31merror[39m: [GrpcClient] LogCreatedEvent error: 13 INTERNAL: Request message serialization failure: Assertion failed
+2026-03-18 23:59:37 - [31merror[39m: [PlaywrightTestFramework] Error in sendLogCreatedEvent: Error: 13 INTERNAL: Request message serialization failure: Assertion failed
+    at callErrorFromStatus (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/call.ts:84:17)
+    at Object.onReceiveStatus (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/client.ts:360:55)
+    at Object.onReceiveStatus (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/client-interceptors.ts:466:34)
+    at Object.onReceiveStatus (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/client-interceptors.ts:424:48)
+    at /Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/resolving-call.ts:170:24
+    at processTicksAndRejections (node:internal/process/task_queues:84:11)
+for call at
+    at ServiceClientImpl.makeUnaryRequest (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/client.ts:325:42)
+    at ServiceClientImpl.logCreatedEvent (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/make-client.ts:189:15)
+    at /Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/browserstack-node-sdk/src/bin/v2/grpcClient.js:1:23449
+    at new Promise (<anonymous>)
+    at GrpcClient.logCreatedEvent (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/browserstack-node-sdk/src/bin/v2/grpcClient.js:1:23066)
+    at PlaywrightTestFramework.sendLogCreatedEvent (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/browserstack-node-sdk/src/bin/v2/framework/playwrightTestFramework.js:1:29575)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at PlaywrightTestFramework.trackEvent (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/browserstack-node-sdk/src/bin/v2/framework/playwrightTestFramework.js:1:8596) {
+  code: 13,
+  details: 'Request message serialization failure: Assertion failed',
+  metadata: Metadata {
+    internalRepr: Map(0) {},
+    opaqueData: Map(0) {},
+    options: {}
+  }
+}
+2026-03-18 23:59:37 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:59:37 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:59:43 - [32minfo[39m: getting screenshots results.
+2026-03-18 23:59:43 - [32minfo[39m: getScreenshots: screenshot file not found, skipping attachment: /Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-12/d60a1fa14a651bd047829ee283e707f6.png
+2026-03-18 23:59:43 - [32minfo[39m: getScreenshots: screenshot file not found, skipping attachment: /Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-12/d264058252b07aed85e25c9271c15c02.png
+2026-03-18 23:59:43 - [32minfo[39m: getScreenshots: screenshot file not found, skipping attachment: /Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-12/b5bb0f9fca4904784f7d8857dd19f4a4.png
+2026-03-18 23:59:43 - [32minfo[39m: [GrpcClient] Sending LogCreatedEvent
+2026-03-18 23:59:43 - [31merror[39m: [GrpcClient] LogCreatedEvent error: 13 INTERNAL: Request message serialization failure: Assertion failed
+2026-03-18 23:59:43 - [31merror[39m: [PlaywrightTestFramework] Error in sendLogCreatedEvent: Error: 13 INTERNAL: Request message serialization failure: Assertion failed
+    at callErrorFromStatus (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/call.ts:84:17)
+    at Object.onReceiveStatus (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/client.ts:360:55)
+    at Object.onReceiveStatus (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/client-interceptors.ts:466:34)
+    at Object.onReceiveStatus (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/client-interceptors.ts:424:48)
+    at /Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/resolving-call.ts:170:24
+    at processTicksAndRejections (node:internal/process/task_queues:84:11)
+for call at
+    at ServiceClientImpl.makeUnaryRequest (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/client.ts:325:42)
+    at ServiceClientImpl.logCreatedEvent (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/make-client.ts:189:15)
+    at /Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/browserstack-node-sdk/src/bin/v2/grpcClient.js:1:23449
+    at new Promise (<anonymous>)
+    at GrpcClient.logCreatedEvent (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/browserstack-node-sdk/src/bin/v2/grpcClient.js:1:23066)
+    at PlaywrightTestFramework.sendLogCreatedEvent (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/browserstack-node-sdk/src/bin/v2/framework/playwrightTestFramework.js:1:29575)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at PlaywrightTestFramework.trackEvent (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/browserstack-node-sdk/src/bin/v2/framework/playwrightTestFramework.js:1:8596) {
+  code: 13,
+  details: 'Request message serialization failure: Assertion failed',
+  metadata: Metadata {
+    internalRepr: Map(0) {},
+    opaqueData: Map(0) {},
+    options: {}
+  }
+}
+2026-03-18 23:59:43 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:59:43 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:59:46 - [32minfo[39m: getting screenshots results.
+2026-03-18 23:59:46 - [32minfo[39m: getScreenshots: screenshot file not found, skipping attachment: /Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-13/c9ac932728330d646c0d9ae02cae9e2f.png
+2026-03-18 23:59:46 - [32minfo[39m: getScreenshots: screenshot file not found, skipping attachment: /Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-13/f0bb293b7159666d4b27ca32d3aae5d7.png
+2026-03-18 23:59:46 - [32minfo[39m: getScreenshots: screenshot file not found, skipping attachment: /Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-13/0d26317280c91b278a5c0a6c1a401ea6.png
+2026-03-18 23:59:46 - [32minfo[39m: [GrpcClient] Sending LogCreatedEvent
+2026-03-18 23:59:46 - [31merror[39m: [GrpcClient] LogCreatedEvent error: 13 INTERNAL: Request message serialization failure: Assertion failed
+2026-03-18 23:59:46 - [31merror[39m: [PlaywrightTestFramework] Error in sendLogCreatedEvent: Error: 13 INTERNAL: Request message serialization failure: Assertion failed
+    at callErrorFromStatus (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/call.ts:84:17)
+    at Object.onReceiveStatus (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/client.ts:360:55)
+    at Object.onReceiveStatus (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/client-interceptors.ts:466:34)
+    at Object.onReceiveStatus (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/client-interceptors.ts:424:48)
+    at /Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/resolving-call.ts:170:24
+    at processTicksAndRejections (node:internal/process/task_queues:84:11)
+for call at
+    at ServiceClientImpl.makeUnaryRequest (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/client.ts:325:42)
+    at ServiceClientImpl.logCreatedEvent (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/make-client.ts:189:15)
+    at /Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/browserstack-node-sdk/src/bin/v2/grpcClient.js:1:23449
+    at new Promise (<anonymous>)
+    at GrpcClient.logCreatedEvent (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/browserstack-node-sdk/src/bin/v2/grpcClient.js:1:23066)
+    at PlaywrightTestFramework.sendLogCreatedEvent (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/browserstack-node-sdk/src/bin/v2/framework/playwrightTestFramework.js:1:29575)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at PlaywrightTestFramework.trackEvent (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/browserstack-node-sdk/src/bin/v2/framework/playwrightTestFramework.js:1:8596) {
+  code: 13,
+  details: 'Request message serialization failure: Assertion failed',
+  metadata: Metadata {
+    internalRepr: Map(0) {},
+    opaqueData: Map(0) {},
+    options: {}
+  }
+}
+2026-03-18 23:59:46 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:59:46 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-18 23:59:51 - [32minfo[39m: getting screenshots results.
+2026-03-18 23:59:51 - [32minfo[39m: getScreenshots: screenshot file not found, skipping attachment: /Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-15/0868ce6f3729e380a935f71c607df846.png
+2026-03-18 23:59:51 - [32minfo[39m: getScreenshots: screenshot file not found, skipping attachment: /Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-15/8108648bf7e11a68cfa8b580091b5c93.png
+2026-03-18 23:59:51 - [32minfo[39m: getScreenshots: screenshot file not found, skipping attachment: /Users/harinpatel/Documents/TGN_Browserstack_Automation/test-results/.playwright-artifacts-15/3fa283bdc6038807e17c89f96156f8d8.png
+2026-03-18 23:59:51 - [32minfo[39m: [GrpcClient] Sending LogCreatedEvent
+2026-03-18 23:59:51 - [31merror[39m: [GrpcClient] LogCreatedEvent error: 13 INTERNAL: Request message serialization failure: Assertion failed
+2026-03-18 23:59:51 - [31merror[39m: [PlaywrightTestFramework] Error in sendLogCreatedEvent: Error: 13 INTERNAL: Request message serialization failure: Assertion failed
+    at callErrorFromStatus (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/call.ts:84:17)
+    at Object.onReceiveStatus (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/client.ts:360:55)
+    at Object.onReceiveStatus (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/client-interceptors.ts:466:34)
+    at Object.onReceiveStatus (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/client-interceptors.ts:424:48)
+    at /Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/resolving-call.ts:170:24
+    at processTicksAndRejections (node:internal/process/task_queues:84:11)
+for call at
+    at ServiceClientImpl.makeUnaryRequest (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/client.ts:325:42)
+    at ServiceClientImpl.logCreatedEvent (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/@grpc/grpc-js/src/make-client.ts:189:15)
+    at /Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/browserstack-node-sdk/src/bin/v2/grpcClient.js:1:23449
+    at new Promise (<anonymous>)
+    at GrpcClient.logCreatedEvent (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/browserstack-node-sdk/src/bin/v2/grpcClient.js:1:23066)
+    at PlaywrightTestFramework.sendLogCreatedEvent (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/browserstack-node-sdk/src/bin/v2/framework/playwrightTestFramework.js:1:29575)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at PlaywrightTestFramework.trackEvent (/Users/harinpatel/Documents/TGN_Browserstack_Automation/node_modules/browserstack-node-sdk/src/bin/v2/framework/playwrightTestFramework.js:1:8596) {
+  code: 13,
+  details: 'Request message serialization failure: Assertion failed',
+  metadata: Metadata {
+    internalRepr: Map(0) {},
+    opaqueData: Map(0) {},
+    options: {}
+  }
+}
+2026-03-18 23:59:51 - [32minfo[39m: [GrpcClient] Sending TestFrameworkEvent
+2026-03-18 23:59:51 - [32minfo[39m: [GrpcClient] TestFrameworkEvent request successful
+2026-03-19 00:01:24 - [32minfo[39m: Shutdown triggered by SIGINT
+2026-03-19 00:01:24 - [32minfo[39m: Shutdown triggered by SIGINT
+2026-03-19 00:01:24 - [33mwarn[39m: SDK-TRA-005: [ClientTroubleShootingService] Some tests might not appear on the BrowserStack dashboard because the test process was interrupted with SIGINT.
+2026-03-19 00:01:24 - [33mwarn[39m: SDK-TRA-005: [ClientTroubleShootingService] Some tests might not appear on the BrowserStack dashboard because the test process was interrupted with SIGINT.
+2026-03-19 00:01:24 - [33mwarn[39m: [ClientTroubleShootingService] Uh-oh! We detected some issues during this run. Error codes: SDK-TRA-005. For details and troubleshooting steps, visit https://www.browserstack.com/docs/test-reporting-and-analytics/sdk-troubleshooting/error-codes?ref=sdk
+2026-03-19 00:01:24 - [33mwarn[39m: [ClientTroubleShootingService] Uh-oh! We detected some issues during this run. Error codes: SDK-TRA-005. For details and troubleshooting steps, visit https://www.browserstack.com/docs/test-reporting-and-analytics/sdk-troubleshooting/error-codes?ref=sdk
+2026-03-19 00:01:24 - [32minfo[39m: [BrowserstackCLI] stop: CLI stop triggered
+2026-03-19 00:01:24 - [32minfo[39m: [GrpcClient] Stopping bin session
+2026-03-19 00:01:24 - [33mwarn[39m: [ClientTroubleShootingService] Uh-oh! We detected some issues during this run. Error codes: SDK-TRA-005. For details and troubleshooting steps, visit https://www.browserstack.com/docs/test-reporting-and-analytics/sdk-troubleshooting/error-codes?ref=sdk
+2026-03-19 00:01:24 - [32minfo[39m: [BrowserstackCLI] stop: CLI stop triggered
+2026-03-19 00:01:24 - [32minfo[39m: [GrpcClient] Stopping bin session
+2026-03-19 00:01:24 - [32minfo[39m: [BrowserstackCLI] stop: CLI stop triggered
+2026-03-19 00:01:24 - [32minfo[39m: [GrpcClient] Stopping bin session
+2026-03-19 00:01:24 - [33mwarn[39m: [ClientTroubleShootingService] Uh-oh! We detected some issues during this run. Error codes: SDK-TRA-005. For details and troubleshooting steps, visit https://www.browserstack.com/docs/test-reporting-and-analytics/sdk-troubleshooting/error-codes?ref=sdk
+2026-03-19 00:01:24 - [32minfo[39m: [BrowserstackCLI] stop: CLI stop triggered
+2026-03-19 00:01:24 - [32minfo[39m: [GrpcClient] Stopping bin session
+2026-03-19 00:01:24 - [32minfo[39m: [GrpcClient] StopBinSession successful
+2026-03-19 00:01:24 - [32minfo[39m: [GrpcClient] StopBinSession successful
+2026-03-19 00:01:24 - [32minfo[39m: stop: stopBinSession build_link=https://automate.browserstack.com/dashboard/v2/builds/4dd6ee9d1b5b3cb25ea6aa36a039ba725e3363d3 hashed_id=4dd6ee9d1b5b3cb25ea6aa36a039ba725e3363d3 o11y_uuid=fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit
+2026-03-19 00:01:24 - [32minfo[39m: [BrowserstackCLI] Unconfiguring modules
+2026-03-19 00:01:24 - [32minfo[39m: [BrowserstackCLI] stop: channel closed
+2026-03-19 00:01:24 - [32minfo[39m: [BrowserstackCLI] Unconfiguring modules
+2026-03-19 00:01:24 - [32minfo[39m: [BrowserstackCLI] stop: channel closed
+2026-03-19 00:01:24 - [32minfo[39m: [GrpcClient] StopBinSession successful
+2026-03-19 00:01:24 - [32minfo[39m: [GrpcClient] StopBinSession successful
+2026-03-19 00:01:24 - [32minfo[39m: stop: stopBinSession build_link=https://automate.browserstack.com/dashboard/v2/builds/4dd6ee9d1b5b3cb25ea6aa36a039ba725e3363d3 hashed_id=4dd6ee9d1b5b3cb25ea6aa36a039ba725e3363d3 o11y_uuid=fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit
+2026-03-19 00:01:24 - [32minfo[39m: [BrowserstackCLI] Unconfiguring modules
+2026-03-19 00:01:24 - [32minfo[39m: [BrowserstackCLI] stop: channel closed
+2026-03-19 00:01:24 - [32minfo[39m: [BrowserstackCLI] Unconfiguring modules
+2026-03-19 00:01:24 - [32minfo[39m: [BrowserstackCLI] stop: channel closed
+2026-03-19 00:01:29 - [32minfo[39m: [BrowserstackCLI] stop: shutting down CLI
+2026-03-19 00:01:29 - [32minfo[39m: [BrowserstackCLI] stop: shutting down CLI
+2026-03-19 00:01:29 - [32minfo[39m: [BrowserstackCLI] stop: shutting down CLI
+2026-03-19 00:01:29 - [32minfo[39m: [BrowserstackCLI] stop: shutting down CLI
+2026-03-19 00:01:32 - [33mwarn[39m: [BrowserstackCLI] stop: process exit timeout, forcing kill
+2026-03-19 00:01:32 - [33mwarn[39m: [BrowserstackCLI] stop: process exit timeout, forcing kill
+2026-03-19 00:01:32 - [32minfo[39m: Visit https://automation.browserstack.com/builds/fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit to view build report, insights, and many more debugging information all at one place!
+
+2026-03-19 00:01:32 - [33mwarn[39m: Unable to show build URL, as build capability is not used
+2026-03-19 00:01:32 - [33mwarn[39m: Unable to show build URL, as build capability is not used
+2026-03-19 00:01:32 - [33mwarn[39m: [BrowserstackCLI] stop: process exit timeout, forcing kill
+2026-03-19 00:01:32 - [33mwarn[39m: [BrowserstackCLI] stop: process exit timeout, forcing kill
+2026-03-19 00:01:33 - [32minfo[39m: SDK run ended for id: 6211e66c-8f6c-4565-b468-118811e0d757, testhub id: fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit
+2026-03-19 00:01:33 - [32minfo[39m: SDK run ended for id: 6211e66c-8f6c-4565-b468-118811e0d757, testhub id: fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit
+2026-03-19 00:01:46 - [32minfo[39m: Deleting /Users/harinpatel/Documents/TGN_Browserstack_Automation/playwright-browserstack-sdk.config.js
+2026-03-19 00:01:46 - [32minfo[39m: Deleting /Users/harinpatel/Documents/TGN_Browserstack_Automation/playwright-browserstack-sdk.config.js
+2026-03-19 00:01:46 - [32minfo[39m: [BrowserstackCLI] stop: CLI is not running, skipping stop
+2026-03-19 00:01:46 - [32minfo[39m: [BrowserstackCLI] stop: CLI is not running, skipping stop

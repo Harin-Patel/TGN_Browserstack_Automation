@@ -1,0 +1,28 @@
+userName: harinpatel_19unzl
+accessKey: qHrM5A8yzLyn3RHXfEdY
+
+framework: playwright
+
+platforms:
+  - os: Windows
+    osVersion: 11
+    browserName: chrome
+    browserVersion: latest
+
+  - os: OS X
+    osVersion: Sonoma
+    browserName: safari
+
+  - deviceName: iPhone 15
+    osVersion: 17
+    browserName: safari
+
+  - deviceName: Samsung Galaxy S23
+    osVersion: 13
+    browserName: chrome
+
+runSettings:
+  projectName: TGN BrowserStack Automation
+  buildName: Regression Suite
+  sessionName: Playwright JS Tests
+  parallels: 4

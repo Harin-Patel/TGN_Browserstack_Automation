@@ -1,0 +1,4540 @@
+2026-03-18T18:26:59.796Z CLI info     Config : {"userName":"[REDACTED]","accessKey":"[REDACTED]","framework":"playwright","platforms":[{"os":"Windows","osVersion":"11","browserName":"chrome","browserVersion":"latest"},{"os":"OS X","osVersion":"Sonoma","browserName":"safari"},{"deviceName":"iPhone 15","osVersion":"17","browserName":"safari"},{"deviceName":"Samsung Galaxy S23","osVersion":"13","browserName":"chrome"}],"runSettings":{"projectName":"TGN BrowserStack Automation","buildName":"Regression Suite","sessionName":"Playwright JS Tests","parallels":4}}
+2026-03-18T18:26:59.799Z CLI info     Should start debug utility: undefined
+2026-03-18T18:27:00.116Z CLI info [testhub:module]  [harinpatel_19unzl]   [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Starting testhub from 9327:0
+2026-03-18T18:27:00.116Z CLI info  [harinpatel_19unzl]   [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://sdk.browserstack.com
+2026-03-18T18:27:00.117Z CLI info  [harinpatel_19unzl]   [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making GET request to https://hub.browserstack.com
+2026-03-18T18:27:00.853Z CLI info  [harinpatel_19unzl]   [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making GET request to https://hub-euw.browserstack.com
+2026-03-18T18:27:00.854Z CLI info  [harinpatel_19unzl]   [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making GET request to https://hub-use.browserstack.com
+2026-03-18T18:27:00.855Z CLI info  [harinpatel_19unzl]   [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making GET request to https://hub-aps.browserstack.com
+2026-03-18T18:27:01.177Z CLI info [testhub:module]  [harinpatel_19unzl]   [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  startBuild: response=fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit
+2026-03-18T18:27:01.179Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2026-03-18T18:27:04.850Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunStarted',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: '8f99045c-0918-4122-adaf-63912da5d87f',
+    name: 'User Logout',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        '  const loginPage = new LoginPage(page);\n' +
+        '  await loginPage.navigate();\n' +
+        "  await loginPage.login('james@mailinator.com', 'Harin123');\n" +
+        '\n' +
+        '  // open profile menu\n' +
+        `  await page.locator("//button[@class='relative flex items-center gap-3 px-4 py-2 bg-white border-2 border-gray-200 rounded-xl transition-all shadow-sm group']").click();\n` +
+        '\n' +
+        '  // click logout\n' +
+        "  await page.getByText('Log Out').click();\n" +
+        '\n' +
+        '  // handle confirmation dialog\n' +
+        `  await page.locator('span:has-text("Log Out")').first().click();\n` +
+        '}'
+    },
+    identifier: 'User Logout',
+    scope: 'User Logout',
+    scopes: [],
+    custom_metadata: undefined,
+    file_name: 'tests/auth/logout.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/logout.spec.js',
+    location: 'tests/auth/logout.spec.js',
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2026-03-18T18:27:04.819Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -latest:Windows 11-browserstack auth/logout.spec.js User Logout'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:27:04.856Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunStarted',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439',
+    name: 'Forgot Password Flow',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        "  await page.goto('https://tgn-staging.staffbot.com/');\n" +
+        '\n' +
+        '  // open login\n' +
+        "  await page.getByRole('link', {\n" +
+        "    name: 'Login or Create Account'\n" +
+        '  }).click();\n' +
+        "  await page.getByRole('link', {\n" +
+        "    name: 'Sign in here'\n" +
+        '  }).click();\n' +
+        '\n' +
+        '  // click forgot password\n' +
+        "  await page.getByText('Forgot your password? →', {\n" +
+        '    exact: true\n' +
+        '  }).click();\n' +
+        '\n' +
+        '  // enter email\n' +
+        "  await page.getByPlaceholder('Enter your email address').fill('james@mailinator.com');\n" +
+        '\n' +
+        '  // submit\n' +
+        "  await page.getByRole('button', {\n" +
+        "    name: 'Send Reset Link'\n" +
+        '  }).click();\n' +
+        '\n' +
+        '  // verify success message\n' +
+        "  await expect(page.getByText('Password reset email sent!')).toBeVisible();\n" +
+        '\n' +
+        '  // back to login\n' +
+        "  await page.getByRole('link', {\n" +
+        "    name: 'Back to Login'\n" +
+        '  }).click();\n' +
+        '}'
+    },
+    identifier: 'Forgot Password Flow',
+    scope: 'Forgot Password Flow',
+    scopes: [],
+    custom_metadata: undefined,
+    file_name: 'tests/auth/forgot-password.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/forgot-password.spec.js',
+    location: 'tests/auth/forgot-password.spec.js',
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2026-03-18T18:27:04.826Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -latest:Windows 11-browserstack auth/forgot-password.spec.js Forgot Password Flow'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:27:04.858Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunStarted',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934',
+    name: 'User Login',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        '  const loginPage = new LoginPage(page);\n' +
+        '  await loginPage.navigate();\n' +
+        "  await loginPage.login('james@mailinator.com', 'Harin123');\n" +
+        '  // verify successful login\n' +
+        '  await expect(page).toHaveURL(/jobs/i);\n' +
+        '}'
+    },
+    identifier: 'User Login',
+    scope: 'User Login',
+    scopes: [],
+    custom_metadata: undefined,
+    file_name: 'tests/auth/login.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/login.spec.js',
+    location: 'tests/auth/login.spec.js',
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2026-03-18T18:27:04.832Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -latest:Windows 11-browserstack auth/login.spec.js User Login'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:27:04.859Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunStarted',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83',
+    name: 'Invalid Login Attempt',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        '  const loginPage = new LoginPage(page);\n' +
+        '  await loginPage.navigate();\n' +
+        "  await loginPage.login('invalid@email.com', 'wrongpassword');\n" +
+        '\n' +
+        '  // verify error message\n' +
+        "  await expect(page.getByText('Invalid email or password. Please check your credentials and try again.')).toBeVisible();\n" +
+        '}'
+    },
+    identifier: 'Invalid Login Attempt',
+    scope: 'Invalid Login Attempt',
+    scopes: [],
+    custom_metadata: undefined,
+    file_name: 'tests/auth/invalid-login.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/invalid-login.spec.js',
+    location: 'tests/auth/invalid-login.spec.js',
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2026-03-18T18:27:04.832Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -latest:Windows 11-browserstack auth/invalid-login.spec.js Invalid Login Attempt'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:27:05.185Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'TestRunStarted',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: '8f99045c-0918-4122-adaf-63912da5d87f',
+      name: 'User Logout',
+      body: [Object],
+      identifier: 'User Logout',
+      scope: 'User Logout',
+      scopes: [],
+      custom_metadata: undefined,
+      file_name: 'tests/auth/logout.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/logout.spec.js',
+      location: 'tests/auth/logout.spec.js',
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2026-03-18T18:27:04.819Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439',
+      name: 'Forgot Password Flow',
+      body: [Object],
+      identifier: 'Forgot Password Flow',
+      scope: 'Forgot Password Flow',
+      scopes: [],
+      custom_metadata: undefined,
+      file_name: 'tests/auth/forgot-password.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/forgot-password.spec.js',
+      location: 'tests/auth/forgot-password.spec.js',
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2026-03-18T18:27:04.826Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934',
+      name: 'User Login',
+      body: [Object],
+      identifier: 'User Login',
+      scope: 'User Login',
+      scopes: [],
+      custom_metadata: undefined,
+      file_name: 'tests/auth/login.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/login.spec.js',
+      location: 'tests/auth/login.spec.js',
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2026-03-18T18:27:04.832Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83',
+      name: 'Invalid Login Attempt',
+      body: [Object],
+      identifier: 'Invalid Login Attempt',
+      scope: 'Invalid Login Attempt',
+      scopes: [],
+      custom_metadata: undefined,
+      file_name: 'tests/auth/invalid-login.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/invalid-login.spec.js',
+      location: 'tests/auth/invalid-login.spec.js',
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2026-03-18T18:27:04.832Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:27:05.187Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:27:11.396Z CLI info [sdk:service]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Driver initialized as primary driver: platformIndex=0
+2026-03-18T18:27:12.112Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:27:12.461Z CLI info [sdk:service]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Driver initialized as primary driver: platformIndex=1
+2026-03-18T18:27:13.053Z CLI info [sdk:service]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Driver initialized as primary driver: platformIndex=2
+2026-03-18T18:27:13.185Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439',
+      integrations: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:27:13.186Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:27:13.325Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:27:13.975Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:27:14.236Z CLI info [sdk:service]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Driver initialized as primary driver: platformIndex=3
+2026-03-18T18:27:15.185Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934',
+      integrations: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:27:15.187Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:27:15.198Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '8f99045c-0918-4122-adaf-63912da5d87f',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:27:17.187Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '8f99045c-0918-4122-adaf-63912da5d87f',
+      integrations: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:27:17.188Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:27:30.433Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:27:30.902Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:27:31.194Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439',
+      integrations: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:27:31.196Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:27:31.851Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:12.615Z',
+      uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439',
+      kind: 'TEST_STEP',
+      message: 'Navigate to "/"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 11194,
+      test_run_uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:23.826Z',
+      uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439',
+      kind: 'TEST_STEP',
+      message: "Click getByRole('link', { name: 'Login or Create Account' })",
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 991,
+      test_run_uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:24.820Z',
+      uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439',
+      kind: 'TEST_STEP',
+      message: "Click getByRole('link', { name: 'Sign in here' })",
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 715,
+      test_run_uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:25.536Z',
+      uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439',
+      kind: 'TEST_STEP',
+      message: "Click getByText('Forgot your password? →', { exact: true })",
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 1355,
+      test_run_uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:26.893Z',
+      uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439',
+      kind: 'TEST_STEP',
+      message: `Fill "james@mailinator.com" getByPlaceholder('Enter your email address')`,
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 368,
+      test_run_uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:27.264Z',
+      uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439',
+      kind: 'TEST_STEP',
+      message: "Click getByRole('button', { name: 'Send Reset Link' })",
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 212,
+      test_run_uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:27.481Z',
+      uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439',
+      kind: 'TEST_STEP',
+      message: `Expect "toBeVisible" getByText('Password reset email sent!')`,
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 631,
+      test_run_uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:28.114Z',
+      uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439',
+      kind: 'TEST_STEP',
+      message: "Click getByRole('link', { name: 'Back to Login' })",
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 189,
+      test_run_uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439'
+    }
+  ]
+} to 9327:0
+2026-03-18T18:27:31.853Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:27:31.861Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunFinished',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439',
+    name: 'Forgot Password Flow',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        "  await page.goto('https://tgn-staging.staffbot.com/');\n" +
+        '\n' +
+        '  // open login\n' +
+        "  await page.getByRole('link', {\n" +
+        "    name: 'Login or Create Account'\n" +
+        '  }).click();\n' +
+        "  await page.getByRole('link', {\n" +
+        "    name: 'Sign in here'\n" +
+        '  }).click();\n' +
+        '\n' +
+        '  // click forgot password\n' +
+        "  await page.getByText('Forgot your password? →', {\n" +
+        '    exact: true\n' +
+        '  }).click();\n' +
+        '\n' +
+        '  // enter email\n' +
+        "  await page.getByPlaceholder('Enter your email address').fill('james@mailinator.com');\n" +
+        '\n' +
+        '  // submit\n' +
+        "  await page.getByRole('button', {\n" +
+        "    name: 'Send Reset Link'\n" +
+        '  }).click();\n' +
+        '\n' +
+        '  // verify success message\n' +
+        "  await expect(page.getByText('Password reset email sent!')).toBeVisible();\n" +
+        '\n' +
+        '  // back to login\n' +
+        "  await page.getByRole('link', {\n" +
+        "    name: 'Back to Login'\n" +
+        '  }).click();\n' +
+        '}'
+    },
+    identifier: 'Forgot Password Flow',
+    scope: 'Forgot Password Flow',
+    scopes: [],
+    custom_metadata: {},
+    file_name: 'tests/auth/forgot-password.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/forgot-password.spec.js',
+    location: 'tests/auth/forgot-password.spec.js',
+    result: 'passed',
+    duration_in_ms: 20376,
+    started_at: '2026-03-18T18:27:04.826Z',
+    finished_at: '2026-03-18T18:27:25.202Z',
+    failure: null,
+    failure_type: undefined,
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -latest:Windows 11-browserstack auth/forgot-password.spec.js Forgot Password Flow'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:27:33.107Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunStarted',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: 'b0735bf2-e7ec-4c38-ba8f-23c64c907904',
+    name: 'Forgot Password Flow',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        "  await page.goto('https://tgn-staging.staffbot.com/');\n" +
+        '\n' +
+        '  // open login\n' +
+        "  await page.getByRole('link', {\n" +
+        "    name: 'Login or Create Account'\n" +
+        '  }).click();\n' +
+        "  await page.getByRole('link', {\n" +
+        "    name: 'Sign in here'\n" +
+        '  }).click();\n' +
+        '\n' +
+        '  // click forgot password\n' +
+        "  await page.getByText('Forgot your password? →', {\n" +
+        '    exact: true\n' +
+        '  }).click();\n' +
+        '\n' +
+        '  // enter email\n' +
+        "  await page.getByPlaceholder('Enter your email address').fill('james@mailinator.com');\n" +
+        '\n' +
+        '  // submit\n' +
+        "  await page.getByRole('button', {\n" +
+        "    name: 'Send Reset Link'\n" +
+        '  }).click();\n' +
+        '\n' +
+        '  // verify success message\n' +
+        "  await expect(page.getByText('Password reset email sent!')).toBeVisible();\n" +
+        '\n' +
+        '  // back to login\n' +
+        "  await page.getByRole('link', {\n" +
+        "    name: 'Back to Login'\n" +
+        '  }).click();\n' +
+        '}'
+    },
+    identifier: 'Forgot Password Flow',
+    scope: 'Forgot Password Flow',
+    scopes: [],
+    custom_metadata: undefined,
+    file_name: 'tests/auth/forgot-password.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/forgot-password.spec.js',
+    location: 'tests/auth/forgot-password.spec.js',
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2026-03-18T18:27:33.103Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -:OSX Sonoma-browserstack auth/forgot-password.spec.js Forgot Password Flow'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:27:33.195Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'LogCreated',
+    logs: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ]
+  },
+  {
+    event_type: 'TestRunFinished',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: 'a6581761-86ae-477a-a1ef-7fa5da748439',
+      name: 'Forgot Password Flow',
+      body: [Object],
+      identifier: 'Forgot Password Flow',
+      scope: 'Forgot Password Flow',
+      scopes: [],
+      custom_metadata: {},
+      file_name: 'tests/auth/forgot-password.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/forgot-password.spec.js',
+      location: 'tests/auth/forgot-password.spec.js',
+      result: 'passed',
+      duration_in_ms: 20376,
+      started_at: '2026-03-18T18:27:04.826Z',
+      finished_at: '2026-03-18T18:27:25.202Z',
+      failure: null,
+      failure_type: undefined,
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: 'b0735bf2-e7ec-4c38-ba8f-23c64c907904',
+      name: 'Forgot Password Flow',
+      body: [Object],
+      identifier: 'Forgot Password Flow',
+      scope: 'Forgot Password Flow',
+      scopes: [],
+      custom_metadata: undefined,
+      file_name: 'tests/auth/forgot-password.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/forgot-password.spec.js',
+      location: 'tests/auth/forgot-password.spec.js',
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2026-03-18T18:27:33.103Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:27:33.195Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:27:34.773Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:27:34.975Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'b0735bf2-e7ec-4c38-ba8f-23c64c907904',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:27:34.984Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:34.966Z',
+      uuid: 'b0735bf2-e7ec-4c38-ba8f-23c64c907904',
+      kind: 'TEST_STEP',
+      message: 'Fixture "browser"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      test_run_uuid: 'b0735bf2-e7ec-4c38-ba8f-23c64c907904'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:34.969Z',
+      uuid: 'b0735bf2-e7ec-4c38-ba8f-23c64c907904',
+      kind: 'TEST_STEP',
+      message: 'Fixture "__browserstack_workerHook"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 2,
+      test_run_uuid: 'b0735bf2-e7ec-4c38-ba8f-23c64c907904'
+    }
+  ]
+} to 9327:0
+2026-03-18T18:27:34.988Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunFinished',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: 'b0735bf2-e7ec-4c38-ba8f-23c64c907904',
+    name: 'Forgot Password Flow',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        "  await page.goto('https://tgn-staging.staffbot.com/');\n" +
+        '\n' +
+        '  // open login\n' +
+        "  await page.getByRole('link', {\n" +
+        "    name: 'Login or Create Account'\n" +
+        '  }).click();\n' +
+        "  await page.getByRole('link', {\n" +
+        "    name: 'Sign in here'\n" +
+        '  }).click();\n' +
+        '\n' +
+        '  // click forgot password\n' +
+        "  await page.getByText('Forgot your password? →', {\n" +
+        '    exact: true\n' +
+        '  }).click();\n' +
+        '\n' +
+        '  // enter email\n' +
+        "  await page.getByPlaceholder('Enter your email address').fill('james@mailinator.com');\n" +
+        '\n' +
+        '  // submit\n' +
+        "  await page.getByRole('button', {\n" +
+        "    name: 'Send Reset Link'\n" +
+        '  }).click();\n' +
+        '\n' +
+        '  // verify success message\n' +
+        "  await expect(page.getByText('Password reset email sent!')).toBeVisible();\n" +
+        '\n' +
+        '  // back to login\n' +
+        "  await page.getByRole('link', {\n" +
+        "    name: 'Back to Login'\n" +
+        '  }).click();\n' +
+        '}'
+    },
+    identifier: 'Forgot Password Flow',
+    scope: 'Forgot Password Flow',
+    scopes: [],
+    custom_metadata: {},
+    file_name: 'tests/auth/forgot-password.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/forgot-password.spec.js',
+    location: 'tests/auth/forgot-password.spec.js',
+    result: 'failed',
+    duration_in_ms: 15,
+    started_at: '2026-03-18T18:27:33.103Z',
+    finished_at: '2026-03-18T18:27:33.118Z',
+    failure: [ [Object] ],
+    failure_type: 'UnhandledError',
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -:OSX Sonoma-browserstack auth/forgot-password.spec.js Forgot Password Flow'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:27:35.195Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'b0735bf2-e7ec-4c38-ba8f-23c64c907904',
+      integrations: [Object]
+    }
+  },
+  { event_type: 'LogCreated', logs: [ [Object], [Object] ] },
+  {
+    event_type: 'TestRunFinished',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: 'b0735bf2-e7ec-4c38-ba8f-23c64c907904',
+      name: 'Forgot Password Flow',
+      body: [Object],
+      identifier: 'Forgot Password Flow',
+      scope: 'Forgot Password Flow',
+      scopes: [],
+      custom_metadata: {},
+      file_name: 'tests/auth/forgot-password.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/forgot-password.spec.js',
+      location: 'tests/auth/forgot-password.spec.js',
+      result: 'failed',
+      duration_in_ms: 15,
+      started_at: '2026-03-18T18:27:33.103Z',
+      finished_at: '2026-03-18T18:27:33.118Z',
+      failure: [Array],
+      failure_type: 'UnhandledError',
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:27:35.196Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:27:35.273Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:27:35.657Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '8f99045c-0918-4122-adaf-63912da5d87f',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:27:35.925Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunStarted',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: '7364eb14-65e9-470f-a7b7-f3aba16fcfc2',
+    name: 'Invalid Login Attempt',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        '  const loginPage = new LoginPage(page);\n' +
+        '  await loginPage.navigate();\n' +
+        "  await loginPage.login('invalid@email.com', 'wrongpassword');\n" +
+        '\n' +
+        '  // verify error message\n' +
+        "  await expect(page.getByText('Invalid email or password. Please check your credentials and try again.')).toBeVisible();\n" +
+        '}'
+    },
+    identifier: 'Invalid Login Attempt',
+    scope: 'Invalid Login Attempt',
+    scopes: [],
+    custom_metadata: undefined,
+    file_name: 'tests/auth/invalid-login.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/invalid-login.spec.js',
+    location: 'tests/auth/invalid-login.spec.js',
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2026-03-18T18:27:35.922Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -:OSX Sonoma-browserstack auth/invalid-login.spec.js Invalid Login Attempt'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:27:36.112Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '8f99045c-0918-4122-adaf-63912da5d87f',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:27:36.170Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:14.488Z',
+      uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934',
+      kind: 'TEST_STEP',
+      message: 'Navigate to "/"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 11003,
+      test_run_uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:25.513Z',
+      uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934',
+      kind: 'TEST_STEP',
+      message: "Click getByRole('link', { name: 'Login or Create Account' })",
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 1024,
+      test_run_uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:26.541Z',
+      uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934',
+      kind: 'TEST_STEP',
+      message: "Click getByRole('link', { name: 'Sign in here' })",
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 1347,
+      test_run_uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:27.889Z',
+      uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934',
+      kind: 'TEST_STEP',
+      message: `Fill "james@mailinator.com" getByLabel('Email Address')`,
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 282,
+      test_run_uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:28.173Z',
+      uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934',
+      kind: 'TEST_STEP',
+      message: `Fill "Harin123" getByLabel('Password')`,
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 463,
+      test_run_uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:28.639Z',
+      uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934',
+      kind: 'TEST_STEP',
+      message: "Click getByRole('button', { name: 'Log In' })",
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 335,
+      test_run_uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:28.978Z',
+      uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934',
+      kind: 'TEST_STEP',
+      message: 'Expect "toHaveURL"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 1112,
+      test_run_uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934'
+    }
+  ]
+} to 9327:0
+2026-03-18T18:27:36.170Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:27:36.176Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunFinished',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934',
+    name: 'User Login',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        '  const loginPage = new LoginPage(page);\n' +
+        '  await loginPage.navigate();\n' +
+        "  await loginPage.login('james@mailinator.com', 'Harin123');\n" +
+        '  // verify successful login\n' +
+        '  await expect(page).toHaveURL(/jobs/i);\n' +
+        '}'
+    },
+    identifier: 'User Login',
+    scope: 'User Login',
+    scopes: [],
+    custom_metadata: {},
+    file_name: 'tests/auth/login.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/login.spec.js',
+    location: 'tests/auth/login.spec.js',
+    result: 'passed',
+    duration_in_ms: 23090,
+    started_at: '2026-03-18T18:27:04.832Z',
+    finished_at: '2026-03-18T18:27:27.922Z',
+    failure: null,
+    failure_type: undefined,
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -latest:Windows 11-browserstack auth/login.spec.js User Login'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:27:36.506Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:27:37.026Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:27:37.127Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunStarted',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: '075d2314-29ac-4b78-b875-03cacea500d2',
+    name: 'User Login',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        '  const loginPage = new LoginPage(page);\n' +
+        '  await loginPage.navigate();\n' +
+        "  await loginPage.login('james@mailinator.com', 'Harin123');\n" +
+        '  // verify successful login\n' +
+        '  await expect(page).toHaveURL(/jobs/i);\n' +
+        '}'
+    },
+    identifier: 'User Login',
+    scope: 'User Login',
+    scopes: [],
+    custom_metadata: undefined,
+    file_name: 'tests/auth/login.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/login.spec.js',
+    location: 'tests/auth/login.spec.js',
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2026-03-18T18:27:37.124Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -:OSX Sonoma-browserstack auth/login.spec.js User Login'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:27:37.166Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:15.743Z',
+      uuid: '8f99045c-0918-4122-adaf-63912da5d87f',
+      kind: 'TEST_STEP',
+      message: 'Navigate to "/"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 9592,
+      test_run_uuid: '8f99045c-0918-4122-adaf-63912da5d87f'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:25.347Z',
+      uuid: '8f99045c-0918-4122-adaf-63912da5d87f',
+      kind: 'TEST_STEP',
+      message: "Click getByRole('link', { name: 'Login or Create Account' })",
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 1961,
+      test_run_uuid: '8f99045c-0918-4122-adaf-63912da5d87f'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:27.310Z',
+      uuid: '8f99045c-0918-4122-adaf-63912da5d87f',
+      kind: 'TEST_STEP',
+      message: "Click getByRole('link', { name: 'Sign in here' })",
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 1122,
+      test_run_uuid: '8f99045c-0918-4122-adaf-63912da5d87f'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:28.435Z',
+      uuid: '8f99045c-0918-4122-adaf-63912da5d87f',
+      kind: 'TEST_STEP',
+      message: `Fill "james@mailinator.com" getByLabel('Email Address')`,
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 455,
+      test_run_uuid: '8f99045c-0918-4122-adaf-63912da5d87f'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:28.893Z',
+      uuid: '8f99045c-0918-4122-adaf-63912da5d87f',
+      kind: 'TEST_STEP',
+      message: `Fill "Harin123" getByLabel('Password')`,
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 278,
+      test_run_uuid: '8f99045c-0918-4122-adaf-63912da5d87f'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:29.172Z',
+      uuid: '8f99045c-0918-4122-adaf-63912da5d87f',
+      kind: 'TEST_STEP',
+      message: "Click getByRole('button', { name: 'Log In' })",
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 331,
+      test_run_uuid: '8f99045c-0918-4122-adaf-63912da5d87f'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:29.505Z',
+      uuid: '8f99045c-0918-4122-adaf-63912da5d87f',
+      kind: 'TEST_STEP',
+      message: "Click locator('//button[@class=\\'relative flex items-center gap-3 px-4 py-2 bg-white border-2 border-gray-200 rounded-xl transition-all shadow-sm group\\']')",
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 1230,
+      test_run_uuid: '8f99045c-0918-4122-adaf-63912da5d87f'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:30.737Z',
+      uuid: '8f99045c-0918-4122-adaf-63912da5d87f',
+      kind: 'TEST_STEP',
+      message: "Click getByText('Log Out')",
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 1082,
+      test_run_uuid: '8f99045c-0918-4122-adaf-63912da5d87f'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:31.824Z',
+      uuid: '8f99045c-0918-4122-adaf-63912da5d87f',
+      kind: 'TEST_STEP',
+      message: `Click locator('span:has-text("Log Out")').first()`,
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 857,
+      test_run_uuid: '8f99045c-0918-4122-adaf-63912da5d87f'
+    }
+  ]
+} to 9327:0
+2026-03-18T18:27:37.167Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:27:37.175Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunFinished',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: '8f99045c-0918-4122-adaf-63912da5d87f',
+    name: 'User Logout',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        '  const loginPage = new LoginPage(page);\n' +
+        '  await loginPage.navigate();\n' +
+        "  await loginPage.login('james@mailinator.com', 'Harin123');\n" +
+        '\n' +
+        '  // open profile menu\n' +
+        `  await page.locator("//button[@class='relative flex items-center gap-3 px-4 py-2 bg-white border-2 border-gray-200 rounded-xl transition-all shadow-sm group']").click();\n` +
+        '\n' +
+        '  // click logout\n' +
+        "  await page.getByText('Log Out').click();\n" +
+        '\n' +
+        '  // handle confirmation dialog\n' +
+        `  await page.locator('span:has-text("Log Out")').first().click();\n` +
+        '}'
+    },
+    identifier: 'User Logout',
+    scope: 'User Logout',
+    scopes: [],
+    custom_metadata: {},
+    file_name: 'tests/auth/logout.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/logout.spec.js',
+    location: 'tests/auth/logout.spec.js',
+    result: 'passed',
+    duration_in_ms: 22926,
+    started_at: '2026-03-18T18:27:04.819Z',
+    finished_at: '2026-03-18T18:27:27.745Z',
+    failure: null,
+    failure_type: undefined,
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -latest:Windows 11-browserstack auth/logout.spec.js User Logout'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:27:37.196Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '8f99045c-0918-4122-adaf-63912da5d87f',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: '7364eb14-65e9-470f-a7b7-f3aba16fcfc2',
+      name: 'Invalid Login Attempt',
+      body: [Object],
+      identifier: 'Invalid Login Attempt',
+      scope: 'Invalid Login Attempt',
+      scopes: [],
+      custom_metadata: undefined,
+      file_name: 'tests/auth/invalid-login.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/invalid-login.spec.js',
+      location: 'tests/auth/invalid-login.spec.js',
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2026-03-18T18:27:35.922Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '8f99045c-0918-4122-adaf-63912da5d87f',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'LogCreated',
+    logs: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ]
+  },
+  {
+    event_type: 'TestRunFinished',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: 'fe56b4fa-639c-41bb-875e-1ef01e26d934',
+      name: 'User Login',
+      body: [Object],
+      identifier: 'User Login',
+      scope: 'User Login',
+      scopes: [],
+      custom_metadata: {},
+      file_name: 'tests/auth/login.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/login.spec.js',
+      location: 'tests/auth/login.spec.js',
+      result: 'passed',
+      duration_in_ms: 23090,
+      started_at: '2026-03-18T18:27:04.832Z',
+      finished_at: '2026-03-18T18:27:27.922Z',
+      failure: null,
+      failure_type: undefined,
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: '075d2314-29ac-4b78-b875-03cacea500d2',
+      name: 'User Login',
+      body: [Object],
+      identifier: 'User Login',
+      scope: 'User Login',
+      scopes: [],
+      custom_metadata: undefined,
+      file_name: 'tests/auth/login.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/login.spec.js',
+      location: 'tests/auth/login.spec.js',
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2026-03-18T18:27:37.124Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  },
+  {
+    event_type: 'LogCreated',
+    logs: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ]
+  },
+  {
+    event_type: 'TestRunFinished',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: '8f99045c-0918-4122-adaf-63912da5d87f',
+      name: 'User Logout',
+      body: [Object],
+      identifier: 'User Logout',
+      scope: 'User Logout',
+      scopes: [],
+      custom_metadata: {},
+      file_name: 'tests/auth/logout.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/logout.spec.js',
+      location: 'tests/auth/logout.spec.js',
+      result: 'passed',
+      duration_in_ms: 22926,
+      started_at: '2026-03-18T18:27:04.819Z',
+      finished_at: '2026-03-18T18:27:27.745Z',
+      failure: null,
+      failure_type: undefined,
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:27:37.197Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:27:37.980Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:13.850Z',
+      uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83',
+      kind: 'TEST_STEP',
+      message: 'Navigate to "/"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 10864,
+      test_run_uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:24.725Z',
+      uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83',
+      kind: 'TEST_STEP',
+      message: "Click getByRole('link', { name: 'Login or Create Account' })",
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 764,
+      test_run_uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:25.494Z',
+      uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83',
+      kind: 'TEST_STEP',
+      message: "Click getByRole('link', { name: 'Sign in here' })",
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 1703,
+      test_run_uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:27.203Z',
+      uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83',
+      kind: 'TEST_STEP',
+      message: `Fill "invalid@email.com" getByLabel('Email Address')`,
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 203,
+      test_run_uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:27.408Z',
+      uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83',
+      kind: 'TEST_STEP',
+      message: `Fill "wrongpassword" getByLabel('Password')`,
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 461,
+      test_run_uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:27.871Z',
+      uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83',
+      kind: 'TEST_STEP',
+      message: "Click getByRole('button', { name: 'Log In' })",
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 372,
+      test_run_uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:28.247Z',
+      uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83',
+      kind: 'TEST_STEP',
+      message: `Expect "toBeVisible" getByText('Invalid email or password. Please check your credentials and try again.')`,
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 760,
+      test_run_uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83'
+    }
+  ]
+} to 9327:0
+2026-03-18T18:27:37.980Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:27:37.992Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunFinished',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83',
+    name: 'Invalid Login Attempt',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        '  const loginPage = new LoginPage(page);\n' +
+        '  await loginPage.navigate();\n' +
+        "  await loginPage.login('invalid@email.com', 'wrongpassword');\n" +
+        '\n' +
+        '  // verify error message\n' +
+        "  await expect(page.getByText('Invalid email or password. Please check your credentials and try again.')).toBeVisible();\n" +
+        '}'
+    },
+    identifier: 'Invalid Login Attempt',
+    scope: 'Invalid Login Attempt',
+    scopes: [],
+    custom_metadata: {},
+    file_name: 'tests/auth/invalid-login.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/invalid-login.spec.js',
+    location: 'tests/auth/invalid-login.spec.js',
+    result: 'passed',
+    duration_in_ms: 25495,
+    started_at: '2026-03-18T18:27:04.832Z',
+    finished_at: '2026-03-18T18:27:30.327Z',
+    failure: null,
+    failure_type: undefined,
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -latest:Windows 11-browserstack auth/invalid-login.spec.js Invalid Login Attempt'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:27:38.179Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunStarted',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: '92a35cf0-c707-4b16-a0f8-aed36b95bf1c',
+    name: 'User Logout',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        '  const loginPage = new LoginPage(page);\n' +
+        '  await loginPage.navigate();\n' +
+        "  await loginPage.login('james@mailinator.com', 'Harin123');\n" +
+        '\n' +
+        '  // open profile menu\n' +
+        `  await page.locator("//button[@class='relative flex items-center gap-3 px-4 py-2 bg-white border-2 border-gray-200 rounded-xl transition-all shadow-sm group']").click();\n` +
+        '\n' +
+        '  // click logout\n' +
+        "  await page.getByText('Log Out').click();\n" +
+        '\n' +
+        '  // handle confirmation dialog\n' +
+        `  await page.locator('span:has-text("Log Out")').first().click();\n` +
+        '}'
+    },
+    identifier: 'User Logout',
+    scope: 'User Logout',
+    scopes: [],
+    custom_metadata: undefined,
+    file_name: 'tests/auth/logout.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/logout.spec.js',
+    location: 'tests/auth/logout.spec.js',
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2026-03-18T18:27:38.169Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -:OSX Sonoma-browserstack auth/logout.spec.js User Logout'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:27:38.207Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '7364eb14-65e9-470f-a7b7-f3aba16fcfc2',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:27:38.209Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:38.201Z',
+      uuid: '7364eb14-65e9-470f-a7b7-f3aba16fcfc2',
+      kind: 'TEST_STEP',
+      message: 'Fixture "browser"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      test_run_uuid: '7364eb14-65e9-470f-a7b7-f3aba16fcfc2'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:38.203Z',
+      uuid: '7364eb14-65e9-470f-a7b7-f3aba16fcfc2',
+      kind: 'TEST_STEP',
+      message: 'Fixture "__browserstack_workerHook"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 1,
+      test_run_uuid: '7364eb14-65e9-470f-a7b7-f3aba16fcfc2'
+    }
+  ]
+} to 9327:0
+2026-03-18T18:27:38.211Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunFinished',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: '7364eb14-65e9-470f-a7b7-f3aba16fcfc2',
+    name: 'Invalid Login Attempt',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        '  const loginPage = new LoginPage(page);\n' +
+        '  await loginPage.navigate();\n' +
+        "  await loginPage.login('invalid@email.com', 'wrongpassword');\n" +
+        '\n' +
+        '  // verify error message\n' +
+        "  await expect(page.getByText('Invalid email or password. Please check your credentials and try again.')).toBeVisible();\n" +
+        '}'
+    },
+    identifier: 'Invalid Login Attempt',
+    scope: 'Invalid Login Attempt',
+    scopes: [],
+    custom_metadata: {},
+    file_name: 'tests/auth/invalid-login.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/invalid-login.spec.js',
+    location: 'tests/auth/invalid-login.spec.js',
+    result: 'failed',
+    duration_in_ms: 13,
+    started_at: '2026-03-18T18:27:35.922Z',
+    finished_at: '2026-03-18T18:27:35.935Z',
+    failure: [ [Object] ],
+    failure_type: 'UnhandledError',
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -:OSX Sonoma-browserstack auth/invalid-login.spec.js Invalid Login Attempt'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:27:39.176Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunStarted',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: '202b6081-b36d-42b8-bbb3-b36857a4ff9b',
+    name: 'Forgot Password Flow',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        "  await page.goto('https://tgn-staging.staffbot.com/');\n" +
+        '\n' +
+        '  // open login\n' +
+        "  await page.getByRole('link', {\n" +
+        "    name: 'Login or Create Account'\n" +
+        '  }).click();\n' +
+        "  await page.getByRole('link', {\n" +
+        "    name: 'Sign in here'\n" +
+        '  }).click();\n' +
+        '\n' +
+        '  // click forgot password\n' +
+        "  await page.getByText('Forgot your password? →', {\n" +
+        '    exact: true\n' +
+        '  }).click();\n' +
+        '\n' +
+        '  // enter email\n' +
+        "  await page.getByPlaceholder('Enter your email address').fill('james@mailinator.com');\n" +
+        '\n' +
+        '  // submit\n' +
+        "  await page.getByRole('button', {\n" +
+        "    name: 'Send Reset Link'\n" +
+        '  }).click();\n' +
+        '\n' +
+        '  // verify success message\n' +
+        "  await expect(page.getByText('Password reset email sent!')).toBeVisible();\n" +
+        '\n' +
+        '  // back to login\n' +
+        "  await page.getByRole('link', {\n" +
+        "    name: 'Back to Login'\n" +
+        '  }).click();\n' +
+        '}'
+    },
+    identifier: 'Forgot Password Flow',
+    scope: 'Forgot Password Flow',
+    scopes: [],
+    custom_metadata: undefined,
+    file_name: 'tests/auth/forgot-password.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/forgot-password.spec.js',
+    location: 'tests/auth/forgot-password.spec.js',
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2026-03-18T18:27:39.171Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -iPhone 15:17-browserstack-mobile auth/forgot-password.spec.js Forgot Password Flow'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:27:39.198Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'LogCreated',
+    logs: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ]
+  },
+  {
+    event_type: 'TestRunFinished',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: 'b4093ce0-08e0-4d55-b6dd-fafa5bad4a83',
+      name: 'Invalid Login Attempt',
+      body: [Object],
+      identifier: 'Invalid Login Attempt',
+      scope: 'Invalid Login Attempt',
+      scopes: [],
+      custom_metadata: {},
+      file_name: 'tests/auth/invalid-login.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/invalid-login.spec.js',
+      location: 'tests/auth/invalid-login.spec.js',
+      result: 'passed',
+      duration_in_ms: 25495,
+      started_at: '2026-03-18T18:27:04.832Z',
+      finished_at: '2026-03-18T18:27:30.327Z',
+      failure: null,
+      failure_type: undefined,
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: '92a35cf0-c707-4b16-a0f8-aed36b95bf1c',
+      name: 'User Logout',
+      body: [Object],
+      identifier: 'User Logout',
+      scope: 'User Logout',
+      scopes: [],
+      custom_metadata: undefined,
+      file_name: 'tests/auth/logout.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/logout.spec.js',
+      location: 'tests/auth/logout.spec.js',
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2026-03-18T18:27:38.169Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '7364eb14-65e9-470f-a7b7-f3aba16fcfc2',
+      integrations: [Object]
+    }
+  },
+  { event_type: 'LogCreated', logs: [ [Object], [Object] ] },
+  {
+    event_type: 'TestRunFinished',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: '7364eb14-65e9-470f-a7b7-f3aba16fcfc2',
+      name: 'Invalid Login Attempt',
+      body: [Object],
+      identifier: 'Invalid Login Attempt',
+      scope: 'Invalid Login Attempt',
+      scopes: [],
+      custom_metadata: {},
+      file_name: 'tests/auth/invalid-login.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/invalid-login.spec.js',
+      location: 'tests/auth/invalid-login.spec.js',
+      result: 'failed',
+      duration_in_ms: 13,
+      started_at: '2026-03-18T18:27:35.922Z',
+      finished_at: '2026-03-18T18:27:35.935Z',
+      failure: [Array],
+      failure_type: 'UnhandledError',
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: '202b6081-b36d-42b8-bbb3-b36857a4ff9b',
+      name: 'Forgot Password Flow',
+      body: [Object],
+      identifier: 'Forgot Password Flow',
+      scope: 'Forgot Password Flow',
+      scopes: [],
+      custom_metadata: undefined,
+      file_name: 'tests/auth/forgot-password.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/forgot-password.spec.js',
+      location: 'tests/auth/forgot-password.spec.js',
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2026-03-18T18:27:39.171Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:27:39.201Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:27:39.303Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunStarted',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: '6fe6f94f-b43c-44b4-a3ec-d86213e8f3ff',
+    name: 'Invalid Login Attempt',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        '  const loginPage = new LoginPage(page);\n' +
+        '  await loginPage.navigate();\n' +
+        "  await loginPage.login('invalid@email.com', 'wrongpassword');\n" +
+        '\n' +
+        '  // verify error message\n' +
+        "  await expect(page.getByText('Invalid email or password. Please check your credentials and try again.')).toBeVisible();\n" +
+        '}'
+    },
+    identifier: 'Invalid Login Attempt',
+    scope: 'Invalid Login Attempt',
+    scopes: [],
+    custom_metadata: undefined,
+    file_name: 'tests/auth/invalid-login.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/invalid-login.spec.js',
+    location: 'tests/auth/invalid-login.spec.js',
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2026-03-18T18:27:39.299Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -iPhone 15:17-browserstack-mobile auth/invalid-login.spec.js Invalid Login Attempt'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:27:39.396Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '075d2314-29ac-4b78-b875-03cacea500d2',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:27:39.397Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:39.392Z',
+      uuid: '075d2314-29ac-4b78-b875-03cacea500d2',
+      kind: 'TEST_STEP',
+      message: 'Fixture "browser"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      test_run_uuid: '075d2314-29ac-4b78-b875-03cacea500d2'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:39.393Z',
+      uuid: '075d2314-29ac-4b78-b875-03cacea500d2',
+      kind: 'TEST_STEP',
+      message: 'Fixture "__browserstack_workerHook"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 1,
+      test_run_uuid: '075d2314-29ac-4b78-b875-03cacea500d2'
+    }
+  ]
+} to 9327:0
+2026-03-18T18:27:39.399Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunFinished',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: '075d2314-29ac-4b78-b875-03cacea500d2',
+    name: 'User Login',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        '  const loginPage = new LoginPage(page);\n' +
+        '  await loginPage.navigate();\n' +
+        "  await loginPage.login('james@mailinator.com', 'Harin123');\n" +
+        '  // verify successful login\n' +
+        '  await expect(page).toHaveURL(/jobs/i);\n' +
+        '}'
+    },
+    identifier: 'User Login',
+    scope: 'User Login',
+    scopes: [],
+    custom_metadata: {},
+    file_name: 'tests/auth/login.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/login.spec.js',
+    location: 'tests/auth/login.spec.js',
+    result: 'failed',
+    duration_in_ms: 15,
+    started_at: '2026-03-18T18:27:37.124Z',
+    finished_at: '2026-03-18T18:27:37.139Z',
+    failure: [ [Object] ],
+    failure_type: 'UnhandledError',
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -:OSX Sonoma-browserstack auth/login.spec.js User Login'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:27:40.338Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunStarted',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: '39956c75-728f-4ac3-93f8-df9f6f926ac4',
+    name: 'User Login',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        '  const loginPage = new LoginPage(page);\n' +
+        '  await loginPage.navigate();\n' +
+        "  await loginPage.login('james@mailinator.com', 'Harin123');\n" +
+        '  // verify successful login\n' +
+        '  await expect(page).toHaveURL(/jobs/i);\n' +
+        '}'
+    },
+    identifier: 'User Login',
+    scope: 'User Login',
+    scopes: [],
+    custom_metadata: undefined,
+    file_name: 'tests/auth/login.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/login.spec.js',
+    location: 'tests/auth/login.spec.js',
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2026-03-18T18:27:40.335Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -iPhone 15:17-browserstack-mobile auth/login.spec.js User Login'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:27:40.411Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '92a35cf0-c707-4b16-a0f8-aed36b95bf1c',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:27:40.413Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:40.408Z',
+      uuid: '92a35cf0-c707-4b16-a0f8-aed36b95bf1c',
+      kind: 'TEST_STEP',
+      message: 'Fixture "browser"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      test_run_uuid: '92a35cf0-c707-4b16-a0f8-aed36b95bf1c'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:27:40.408Z',
+      uuid: '92a35cf0-c707-4b16-a0f8-aed36b95bf1c',
+      kind: 'TEST_STEP',
+      message: 'Fixture "__browserstack_workerHook"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 1,
+      test_run_uuid: '92a35cf0-c707-4b16-a0f8-aed36b95bf1c'
+    }
+  ]
+} to 9327:0
+2026-03-18T18:27:40.414Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunFinished',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: '92a35cf0-c707-4b16-a0f8-aed36b95bf1c',
+    name: 'User Logout',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        '  const loginPage = new LoginPage(page);\n' +
+        '  await loginPage.navigate();\n' +
+        "  await loginPage.login('james@mailinator.com', 'Harin123');\n" +
+        '\n' +
+        '  // open profile menu\n' +
+        `  await page.locator("//button[@class='relative flex items-center gap-3 px-4 py-2 bg-white border-2 border-gray-200 rounded-xl transition-all shadow-sm group']").click();\n` +
+        '\n' +
+        '  // click logout\n' +
+        "  await page.getByText('Log Out').click();\n" +
+        '\n' +
+        '  // handle confirmation dialog\n' +
+        `  await page.locator('span:has-text("Log Out")').first().click();\n` +
+        '}'
+    },
+    identifier: 'User Logout',
+    scope: 'User Logout',
+    scopes: [],
+    custom_metadata: {},
+    file_name: 'tests/auth/logout.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/logout.spec.js',
+    location: 'tests/auth/logout.spec.js',
+    result: 'failed',
+    duration_in_ms: 7,
+    started_at: '2026-03-18T18:27:38.169Z',
+    finished_at: '2026-03-18T18:27:38.176Z',
+    failure: [ [Object] ],
+    failure_type: 'UnhandledError',
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -:OSX Sonoma-browserstack auth/logout.spec.js User Logout'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:27:41.200Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'TestRunStarted',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: '6fe6f94f-b43c-44b4-a3ec-d86213e8f3ff',
+      name: 'Invalid Login Attempt',
+      body: [Object],
+      identifier: 'Invalid Login Attempt',
+      scope: 'Invalid Login Attempt',
+      scopes: [],
+      custom_metadata: undefined,
+      file_name: 'tests/auth/invalid-login.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/invalid-login.spec.js',
+      location: 'tests/auth/invalid-login.spec.js',
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2026-03-18T18:27:39.299Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '075d2314-29ac-4b78-b875-03cacea500d2',
+      integrations: [Object]
+    }
+  },
+  { event_type: 'LogCreated', logs: [ [Object], [Object] ] },
+  {
+    event_type: 'TestRunFinished',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: '075d2314-29ac-4b78-b875-03cacea500d2',
+      name: 'User Login',
+      body: [Object],
+      identifier: 'User Login',
+      scope: 'User Login',
+      scopes: [],
+      custom_metadata: {},
+      file_name: 'tests/auth/login.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/login.spec.js',
+      location: 'tests/auth/login.spec.js',
+      result: 'failed',
+      duration_in_ms: 15,
+      started_at: '2026-03-18T18:27:37.124Z',
+      finished_at: '2026-03-18T18:27:37.139Z',
+      failure: [Array],
+      failure_type: 'UnhandledError',
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: '39956c75-728f-4ac3-93f8-df9f6f926ac4',
+      name: 'User Login',
+      body: [Object],
+      identifier: 'User Login',
+      scope: 'User Login',
+      scopes: [],
+      custom_metadata: undefined,
+      file_name: 'tests/auth/login.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/login.spec.js',
+      location: 'tests/auth/login.spec.js',
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2026-03-18T18:27:40.335Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '92a35cf0-c707-4b16-a0f8-aed36b95bf1c',
+      integrations: [Object]
+    }
+  },
+  { event_type: 'LogCreated', logs: [ [Object], [Object] ] },
+  {
+    event_type: 'TestRunFinished',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: '92a35cf0-c707-4b16-a0f8-aed36b95bf1c',
+      name: 'User Logout',
+      body: [Object],
+      identifier: 'User Logout',
+      scope: 'User Logout',
+      scopes: [],
+      custom_metadata: {},
+      file_name: 'tests/auth/logout.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/logout.spec.js',
+      location: 'tests/auth/logout.spec.js',
+      result: 'failed',
+      duration_in_ms: 7,
+      started_at: '2026-03-18T18:27:38.169Z',
+      finished_at: '2026-03-18T18:27:38.176Z',
+      failure: [Array],
+      failure_type: 'UnhandledError',
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:27:41.201Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:27:41.611Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunStarted',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: 'ce47a1c6-ad14-43c6-8389-215de1652f10',
+    name: 'User Logout',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        '  const loginPage = new LoginPage(page);\n' +
+        '  await loginPage.navigate();\n' +
+        "  await loginPage.login('james@mailinator.com', 'Harin123');\n" +
+        '\n' +
+        '  // open profile menu\n' +
+        `  await page.locator("//button[@class='relative flex items-center gap-3 px-4 py-2 bg-white border-2 border-gray-200 rounded-xl transition-all shadow-sm group']").click();\n` +
+        '\n' +
+        '  // click logout\n' +
+        "  await page.getByText('Log Out').click();\n" +
+        '\n' +
+        '  // handle confirmation dialog\n' +
+        `  await page.locator('span:has-text("Log Out")').first().click();\n` +
+        '}'
+    },
+    identifier: 'User Logout',
+    scope: 'User Logout',
+    scopes: [],
+    custom_metadata: undefined,
+    file_name: 'tests/auth/logout.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/logout.spec.js',
+    location: 'tests/auth/logout.spec.js',
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2026-03-18T18:27:41.599Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -iPhone 15:17-browserstack-mobile auth/logout.spec.js User Logout'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:27:43.201Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'TestRunStarted',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: 'ce47a1c6-ad14-43c6-8389-215de1652f10',
+      name: 'User Logout',
+      body: [Object],
+      identifier: 'User Logout',
+      scope: 'User Logout',
+      scopes: [],
+      custom_metadata: undefined,
+      file_name: 'tests/auth/logout.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/logout.spec.js',
+      location: 'tests/auth/logout.spec.js',
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2026-03-18T18:27:41.599Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:27:43.201Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:27:57.512Z CLI info [sdk:service]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Driver initialized as primary driver: platformIndex=0
+2026-03-18T18:27:57.515Z CLI info [sdk:service]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Driver initialized as primary driver: platformIndex=2
+2026-03-18T18:27:59.749Z CLI info [sdk:service]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Driver initialized as primary driver: platformIndex=1
+2026-03-18T18:28:00.499Z CLI info [sdk:service]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Driver initialized as primary driver: platformIndex=3
+2026-03-18T18:28:00.664Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '6fe6f94f-b43c-44b4-a3ec-d86213e8f3ff',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:28:00.695Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '39956c75-728f-4ac3-93f8-df9f6f926ac4',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:28:01.218Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '6fe6f94f-b43c-44b4-a3ec-d86213e8f3ff',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '39956c75-728f-4ac3-93f8-df9f6f926ac4',
+      integrations: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:28:01.228Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:28:03.061Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '202b6081-b36d-42b8-bbb3-b36857a4ff9b',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:28:03.219Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '202b6081-b36d-42b8-bbb3-b36857a4ff9b',
+      integrations: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:28:03.219Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:28:03.802Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'ce47a1c6-ad14-43c6-8389-215de1652f10',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:28:05.220Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'ce47a1c6-ad14-43c6-8389-215de1652f10',
+      integrations: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:28:05.220Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:28:18.263Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '6fe6f94f-b43c-44b4-a3ec-d86213e8f3ff',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:28:18.783Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '6fe6f94f-b43c-44b4-a3ec-d86213e8f3ff',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:28:19.227Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '6fe6f94f-b43c-44b4-a3ec-d86213e8f3ff',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '6fe6f94f-b43c-44b4-a3ec-d86213e8f3ff',
+      integrations: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:28:19.228Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:28:19.272Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '39956c75-728f-4ac3-93f8-df9f6f926ac4',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:28:19.502Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '202b6081-b36d-42b8-bbb3-b36857a4ff9b',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:28:19.649Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:28:01.160Z',
+      uuid: '6fe6f94f-b43c-44b4-a3ec-d86213e8f3ff',
+      kind: 'TEST_STEP',
+      message: 'Navigate to "/"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 11134,
+      test_run_uuid: '6fe6f94f-b43c-44b4-a3ec-d86213e8f3ff'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:28:12.308Z',
+      uuid: '6fe6f94f-b43c-44b4-a3ec-d86213e8f3ff',
+      kind: 'TEST_STEP',
+      message: "Click getByRole('link', { name: 'Login or Create Account' })",
+      level: 'failed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 931,
+      test_run_uuid: '6fe6f94f-b43c-44b4-a3ec-d86213e8f3ff'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:28:19.617Z',
+      uuid: '6fe6f94f-b43c-44b4-a3ec-d86213e8f3ff',
+      kind: 'TEST_STEP',
+      message: 'Fixture "browser"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      test_run_uuid: '6fe6f94f-b43c-44b4-a3ec-d86213e8f3ff'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:28:19.618Z',
+      uuid: '6fe6f94f-b43c-44b4-a3ec-d86213e8f3ff',
+      kind: 'TEST_STEP',
+      message: 'Fixture "browser"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 3,
+      test_run_uuid: '6fe6f94f-b43c-44b4-a3ec-d86213e8f3ff'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:28:19.622Z',
+      uuid: '6fe6f94f-b43c-44b4-a3ec-d86213e8f3ff',
+      kind: 'TEST_STEP',
+      message: 'Fixture "__browserstack_workerHook"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 3,
+      test_run_uuid: '6fe6f94f-b43c-44b4-a3ec-d86213e8f3ff'
+    }
+  ]
+} to 9327:0
+2026-03-18T18:28:19.655Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunFinished',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: '6fe6f94f-b43c-44b4-a3ec-d86213e8f3ff',
+    name: 'Invalid Login Attempt',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        '  const loginPage = new LoginPage(page);\n' +
+        '  await loginPage.navigate();\n' +
+        "  await loginPage.login('invalid@email.com', 'wrongpassword');\n" +
+        '\n' +
+        '  // verify error message\n' +
+        "  await expect(page.getByText('Invalid email or password. Please check your credentials and try again.')).toBeVisible();\n" +
+        '}'
+    },
+    identifier: 'Invalid Login Attempt',
+    scope: 'Invalid Login Attempt',
+    scopes: [],
+    custom_metadata: {},
+    file_name: 'tests/auth/invalid-login.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/invalid-login.spec.js',
+    location: 'tests/auth/invalid-login.spec.js',
+    result: 'failed',
+    duration_in_ms: 22080,
+    started_at: '2026-03-18T18:27:39.299Z',
+    finished_at: '2026-03-18T18:28:01.379Z',
+    failure: [ [Object] ],
+    failure_type: 'UnhandledError',
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -iPhone 15:17-browserstack-mobile auth/invalid-login.spec.js Invalid Login Attempt'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:28:19.826Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '39956c75-728f-4ac3-93f8-df9f6f926ac4',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:28:20.018Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '202b6081-b36d-42b8-bbb3-b36857a4ff9b',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:28:20.707Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:28:01.296Z',
+      uuid: '39956c75-728f-4ac3-93f8-df9f6f926ac4',
+      kind: 'TEST_STEP',
+      message: 'Navigate to "/"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 11940,
+      test_run_uuid: '39956c75-728f-4ac3-93f8-df9f6f926ac4'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:28:13.246Z',
+      uuid: '39956c75-728f-4ac3-93f8-df9f6f926ac4',
+      kind: 'TEST_STEP',
+      message: "Click getByRole('link', { name: 'Login or Create Account' })",
+      level: 'failed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 1004,
+      test_run_uuid: '39956c75-728f-4ac3-93f8-df9f6f926ac4'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:28:20.699Z',
+      uuid: '39956c75-728f-4ac3-93f8-df9f6f926ac4',
+      kind: 'TEST_STEP',
+      message: 'Fixture "browser"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      test_run_uuid: '39956c75-728f-4ac3-93f8-df9f6f926ac4'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:28:20.699Z',
+      uuid: '39956c75-728f-4ac3-93f8-df9f6f926ac4',
+      kind: 'TEST_STEP',
+      message: 'Fixture "browser"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 2,
+      test_run_uuid: '39956c75-728f-4ac3-93f8-df9f6f926ac4'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:28:20.701Z',
+      uuid: '39956c75-728f-4ac3-93f8-df9f6f926ac4',
+      kind: 'TEST_STEP',
+      message: 'Fixture "__browserstack_workerHook"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 1,
+      test_run_uuid: '39956c75-728f-4ac3-93f8-df9f6f926ac4'
+    }
+  ]
+} to 9327:0
+2026-03-18T18:28:20.710Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunFinished',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: '39956c75-728f-4ac3-93f8-df9f6f926ac4',
+    name: 'User Login',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        '  const loginPage = new LoginPage(page);\n' +
+        '  await loginPage.navigate();\n' +
+        "  await loginPage.login('james@mailinator.com', 'Harin123');\n" +
+        '  // verify successful login\n' +
+        '  await expect(page).toHaveURL(/jobs/i);\n' +
+        '}'
+    },
+    identifier: 'User Login',
+    scope: 'User Login',
+    scopes: [],
+    custom_metadata: {},
+    file_name: 'tests/auth/login.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/login.spec.js',
+    location: 'tests/auth/login.spec.js',
+    result: 'failed',
+    duration_in_ms: 23171,
+    started_at: '2026-03-18T18:27:40.335Z',
+    finished_at: '2026-03-18T18:28:03.506Z',
+    failure: [ [Object] ],
+    failure_type: 'UnhandledError',
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -iPhone 15:17-browserstack-mobile auth/login.spec.js User Login'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:28:20.946Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:28:03.581Z',
+      uuid: '202b6081-b36d-42b8-bbb3-b36857a4ff9b',
+      kind: 'TEST_STEP',
+      message: 'Navigate to "/"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 9933,
+      test_run_uuid: '202b6081-b36d-42b8-bbb3-b36857a4ff9b'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:28:13.523Z',
+      uuid: '202b6081-b36d-42b8-bbb3-b36857a4ff9b',
+      kind: 'TEST_STEP',
+      message: "Click getByRole('link', { name: 'Login or Create Account' })",
+      level: 'failed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 956,
+      test_run_uuid: '202b6081-b36d-42b8-bbb3-b36857a4ff9b'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:28:20.938Z',
+      uuid: '202b6081-b36d-42b8-bbb3-b36857a4ff9b',
+      kind: 'TEST_STEP',
+      message: 'Fixture "browser"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      test_run_uuid: '202b6081-b36d-42b8-bbb3-b36857a4ff9b'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:28:20.938Z',
+      uuid: '202b6081-b36d-42b8-bbb3-b36857a4ff9b',
+      kind: 'TEST_STEP',
+      message: 'Fixture "browser"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 2,
+      test_run_uuid: '202b6081-b36d-42b8-bbb3-b36857a4ff9b'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:28:20.940Z',
+      uuid: '202b6081-b36d-42b8-bbb3-b36857a4ff9b',
+      kind: 'TEST_STEP',
+      message: 'Fixture "__browserstack_workerHook"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 1,
+      test_run_uuid: '202b6081-b36d-42b8-bbb3-b36857a4ff9b'
+    }
+  ]
+} to 9327:0
+2026-03-18T18:28:20.948Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunFinished',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: '202b6081-b36d-42b8-bbb3-b36857a4ff9b',
+    name: 'Forgot Password Flow',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        "  await page.goto('https://tgn-staging.staffbot.com/');\n" +
+        '\n' +
+        '  // open login\n' +
+        "  await page.getByRole('link', {\n" +
+        "    name: 'Login or Create Account'\n" +
+        '  }).click();\n' +
+        "  await page.getByRole('link', {\n" +
+        "    name: 'Sign in here'\n" +
+        '  }).click();\n' +
+        '\n' +
+        '  // click forgot password\n' +
+        "  await page.getByText('Forgot your password? →', {\n" +
+        '    exact: true\n' +
+        '  }).click();\n' +
+        '\n' +
+        '  // enter email\n' +
+        "  await page.getByPlaceholder('Enter your email address').fill('james@mailinator.com');\n" +
+        '\n' +
+        '  // submit\n' +
+        "  await page.getByRole('button', {\n" +
+        "    name: 'Send Reset Link'\n" +
+        '  }).click();\n' +
+        '\n' +
+        '  // verify success message\n' +
+        "  await expect(page.getByText('Password reset email sent!')).toBeVisible();\n" +
+        '\n' +
+        '  // back to login\n' +
+        "  await page.getByRole('link', {\n" +
+        "    name: 'Back to Login'\n" +
+        '  }).click();\n' +
+        '}'
+    },
+    identifier: 'Forgot Password Flow',
+    scope: 'Forgot Password Flow',
+    scopes: [],
+    custom_metadata: {},
+    file_name: 'tests/auth/forgot-password.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/forgot-password.spec.js',
+    location: 'tests/auth/forgot-password.spec.js',
+    result: 'failed',
+    duration_in_ms: 21170,
+    started_at: '2026-03-18T18:27:39.171Z',
+    finished_at: '2026-03-18T18:28:00.341Z',
+    failure: [ [Object] ],
+    failure_type: 'UnhandledError',
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -iPhone 15:17-browserstack-mobile auth/forgot-password.spec.js Forgot Password Flow'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:28:20.980Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunStarted',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: '73bb00aa-758e-4e20-b08c-bec5e3fde036',
+    name: 'Forgot Password Flow',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        "  await page.goto('https://tgn-staging.staffbot.com/');\n" +
+        '\n' +
+        '  // open login\n' +
+        "  await page.getByRole('link', {\n" +
+        "    name: 'Login or Create Account'\n" +
+        '  }).click();\n' +
+        "  await page.getByRole('link', {\n" +
+        "    name: 'Sign in here'\n" +
+        '  }).click();\n' +
+        '\n' +
+        '  // click forgot password\n' +
+        "  await page.getByText('Forgot your password? →', {\n" +
+        '    exact: true\n' +
+        '  }).click();\n' +
+        '\n' +
+        '  // enter email\n' +
+        "  await page.getByPlaceholder('Enter your email address').fill('james@mailinator.com');\n" +
+        '\n' +
+        '  // submit\n' +
+        "  await page.getByRole('button', {\n" +
+        "    name: 'Send Reset Link'\n" +
+        '  }).click();\n' +
+        '\n' +
+        '  // verify success message\n' +
+        "  await expect(page.getByText('Password reset email sent!')).toBeVisible();\n" +
+        '\n' +
+        '  // back to login\n' +
+        "  await page.getByRole('link', {\n" +
+        "    name: 'Back to Login'\n" +
+        '  }).click();\n' +
+        '}'
+    },
+    identifier: 'Forgot Password Flow',
+    scope: 'Forgot Password Flow',
+    scopes: [],
+    custom_metadata: undefined,
+    file_name: 'tests/auth/forgot-password.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/forgot-password.spec.js',
+    location: 'tests/auth/forgot-password.spec.js',
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2026-03-18T18:28:20.977Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -Samsung Galaxy S23:13-browserstack-mobile auth/forgot-password.spec.js Forgot Password Flow'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:28:21.227Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '39956c75-728f-4ac3-93f8-df9f6f926ac4',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '202b6081-b36d-42b8-bbb3-b36857a4ff9b',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'LogCreated',
+    logs: [ [Object], [Object], [Object], [Object], [Object] ]
+  },
+  {
+    event_type: 'TestRunFinished',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: '6fe6f94f-b43c-44b4-a3ec-d86213e8f3ff',
+      name: 'Invalid Login Attempt',
+      body: [Object],
+      identifier: 'Invalid Login Attempt',
+      scope: 'Invalid Login Attempt',
+      scopes: [],
+      custom_metadata: {},
+      file_name: 'tests/auth/invalid-login.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/invalid-login.spec.js',
+      location: 'tests/auth/invalid-login.spec.js',
+      result: 'failed',
+      duration_in_ms: 22080,
+      started_at: '2026-03-18T18:27:39.299Z',
+      finished_at: '2026-03-18T18:28:01.379Z',
+      failure: [Array],
+      failure_type: 'UnhandledError',
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '39956c75-728f-4ac3-93f8-df9f6f926ac4',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '202b6081-b36d-42b8-bbb3-b36857a4ff9b',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'LogCreated',
+    logs: [ [Object], [Object], [Object], [Object], [Object] ]
+  },
+  {
+    event_type: 'TestRunFinished',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: '39956c75-728f-4ac3-93f8-df9f6f926ac4',
+      name: 'User Login',
+      body: [Object],
+      identifier: 'User Login',
+      scope: 'User Login',
+      scopes: [],
+      custom_metadata: {},
+      file_name: 'tests/auth/login.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/login.spec.js',
+      location: 'tests/auth/login.spec.js',
+      result: 'failed',
+      duration_in_ms: 23171,
+      started_at: '2026-03-18T18:27:40.335Z',
+      finished_at: '2026-03-18T18:28:03.506Z',
+      failure: [Array],
+      failure_type: 'UnhandledError',
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  },
+  {
+    event_type: 'LogCreated',
+    logs: [ [Object], [Object], [Object], [Object], [Object] ]
+  },
+  {
+    event_type: 'TestRunFinished',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: '202b6081-b36d-42b8-bbb3-b36857a4ff9b',
+      name: 'Forgot Password Flow',
+      body: [Object],
+      identifier: 'Forgot Password Flow',
+      scope: 'Forgot Password Flow',
+      scopes: [],
+      custom_metadata: {},
+      file_name: 'tests/auth/forgot-password.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/forgot-password.spec.js',
+      location: 'tests/auth/forgot-password.spec.js',
+      result: 'failed',
+      duration_in_ms: 21170,
+      started_at: '2026-03-18T18:27:39.171Z',
+      finished_at: '2026-03-18T18:28:00.341Z',
+      failure: [Array],
+      failure_type: 'UnhandledError',
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: '73bb00aa-758e-4e20-b08c-bec5e3fde036',
+      name: 'Forgot Password Flow',
+      body: [Object],
+      identifier: 'Forgot Password Flow',
+      scope: 'Forgot Password Flow',
+      scopes: [],
+      custom_metadata: undefined,
+      file_name: 'tests/auth/forgot-password.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/forgot-password.spec.js',
+      location: 'tests/auth/forgot-password.spec.js',
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2026-03-18T18:28:20.977Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:28:21.228Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:28:21.938Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunStarted',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: 'e0b8a2c2-4dc4-4d12-a71f-3ea99ba8a169',
+    name: 'Invalid Login Attempt',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        '  const loginPage = new LoginPage(page);\n' +
+        '  await loginPage.navigate();\n' +
+        "  await loginPage.login('invalid@email.com', 'wrongpassword');\n" +
+        '\n' +
+        '  // verify error message\n' +
+        "  await expect(page.getByText('Invalid email or password. Please check your credentials and try again.')).toBeVisible();\n" +
+        '}'
+    },
+    identifier: 'Invalid Login Attempt',
+    scope: 'Invalid Login Attempt',
+    scopes: [],
+    custom_metadata: undefined,
+    file_name: 'tests/auth/invalid-login.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/invalid-login.spec.js',
+    location: 'tests/auth/invalid-login.spec.js',
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2026-03-18T18:28:21.881Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -Samsung Galaxy S23:13-browserstack-mobile auth/invalid-login.spec.js Invalid Login Attempt'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:28:22.211Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunStarted',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: 'c8782d4b-0e0b-49be-a050-934befd036d8',
+    name: 'User Login',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        '  const loginPage = new LoginPage(page);\n' +
+        '  await loginPage.navigate();\n' +
+        "  await loginPage.login('james@mailinator.com', 'Harin123');\n" +
+        '  // verify successful login\n' +
+        '  await expect(page).toHaveURL(/jobs/i);\n' +
+        '}'
+    },
+    identifier: 'User Login',
+    scope: 'User Login',
+    scopes: [],
+    custom_metadata: undefined,
+    file_name: 'tests/auth/login.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/login.spec.js',
+    location: 'tests/auth/login.spec.js',
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2026-03-18T18:28:22.207Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -Samsung Galaxy S23:13-browserstack-mobile auth/login.spec.js User Login'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:28:23.230Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'TestRunStarted',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: 'e0b8a2c2-4dc4-4d12-a71f-3ea99ba8a169',
+      name: 'Invalid Login Attempt',
+      body: [Object],
+      identifier: 'Invalid Login Attempt',
+      scope: 'Invalid Login Attempt',
+      scopes: [],
+      custom_metadata: undefined,
+      file_name: 'tests/auth/invalid-login.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/invalid-login.spec.js',
+      location: 'tests/auth/invalid-login.spec.js',
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2026-03-18T18:28:21.881Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: 'c8782d4b-0e0b-49be-a050-934befd036d8',
+      name: 'User Login',
+      body: [Object],
+      identifier: 'User Login',
+      scope: 'User Login',
+      scopes: [],
+      custom_metadata: undefined,
+      file_name: 'tests/auth/login.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/login.spec.js',
+      location: 'tests/auth/login.spec.js',
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2026-03-18T18:28:22.207Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:28:23.231Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:28:30.444Z CLI info [sdk:service]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Driver initialized as primary driver: platformIndex=0
+2026-03-18T18:28:30.687Z CLI info [sdk:service]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Driver initialized as primary driver: platformIndex=2
+2026-03-18T18:28:30.826Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'ce47a1c6-ad14-43c6-8389-215de1652f10',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:28:31.233Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'ce47a1c6-ad14-43c6-8389-215de1652f10',
+      integrations: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:28:31.236Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:28:31.350Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'ce47a1c6-ad14-43c6-8389-215de1652f10',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:28:31.426Z CLI info [sdk:service]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Driver initialized as primary driver: platformIndex=1
+2026-03-18T18:28:32.229Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '73bb00aa-758e-4e20-b08c-bec5e3fde036',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:28:32.484Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'e0b8a2c2-4dc4-4d12-a71f-3ea99ba8a169',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:28:32.629Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:28:04.291Z',
+      uuid: 'ce47a1c6-ad14-43c6-8389-215de1652f10',
+      kind: 'TEST_STEP',
+      message: 'Navigate to "/"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 20583,
+      test_run_uuid: 'ce47a1c6-ad14-43c6-8389-215de1652f10'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:28:24.887Z',
+      uuid: 'ce47a1c6-ad14-43c6-8389-215de1652f10',
+      kind: 'TEST_STEP',
+      message: "Click getByRole('link', { name: 'Login or Create Account' })",
+      level: 'failed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 915,
+      test_run_uuid: 'ce47a1c6-ad14-43c6-8389-215de1652f10'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:28:32.610Z',
+      uuid: 'ce47a1c6-ad14-43c6-8389-215de1652f10',
+      kind: 'TEST_STEP',
+      message: 'Fixture "browser"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      test_run_uuid: 'ce47a1c6-ad14-43c6-8389-215de1652f10'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:28:32.610Z',
+      uuid: 'ce47a1c6-ad14-43c6-8389-215de1652f10',
+      kind: 'TEST_STEP',
+      message: 'Fixture "browser"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 3,
+      test_run_uuid: 'ce47a1c6-ad14-43c6-8389-215de1652f10'
+    },
+    {
+      testFrameworkName: 'Playwright',
+      testFrameworkVersion: '1.58.2',
+      testFrameworkState: 'TEST',
+      timestamp: '2026-03-18T18:28:32.614Z',
+      uuid: 'ce47a1c6-ad14-43c6-8389-215de1652f10',
+      kind: 'TEST_STEP',
+      message: 'Fixture "__browserstack_workerHook"',
+      level: 'passed',
+      fileName: '',
+      fileSize: [Long],
+      filePath: '',
+      attachmentType: '',
+      duration: 1,
+      test_run_uuid: 'ce47a1c6-ad14-43c6-8389-215de1652f10'
+    }
+  ]
+} to 9327:0
+2026-03-18T18:28:32.633Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunFinished',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: 'ce47a1c6-ad14-43c6-8389-215de1652f10',
+    name: 'User Logout',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        '  const loginPage = new LoginPage(page);\n' +
+        '  await loginPage.navigate();\n' +
+        "  await loginPage.login('james@mailinator.com', 'Harin123');\n" +
+        '\n' +
+        '  // open profile menu\n' +
+        `  await page.locator("//button[@class='relative flex items-center gap-3 px-4 py-2 bg-white border-2 border-gray-200 rounded-xl transition-all shadow-sm group']").click();\n` +
+        '\n' +
+        '  // click logout\n' +
+        "  await page.getByText('Log Out').click();\n" +
+        '\n' +
+        '  // handle confirmation dialog\n' +
+        `  await page.locator('span:has-text("Log Out")').first().click();\n` +
+        '}'
+    },
+    identifier: 'User Logout',
+    scope: 'User Logout',
+    scopes: [],
+    custom_metadata: {},
+    file_name: 'tests/auth/logout.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/logout.spec.js',
+    location: 'tests/auth/logout.spec.js',
+    result: 'failed',
+    duration_in_ms: 32069,
+    started_at: '2026-03-18T18:27:41.599Z',
+    finished_at: '2026-03-18T18:28:13.668Z',
+    failure: [ [Object] ],
+    failure_type: 'UnhandledError',
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -iPhone 15:17-browserstack-mobile auth/logout.spec.js User Logout'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:28:32.914Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'c8782d4b-0e0b-49be-a050-934befd036d8',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:28:33.233Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'ce47a1c6-ad14-43c6-8389-215de1652f10',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '73bb00aa-758e-4e20-b08c-bec5e3fde036',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'e0b8a2c2-4dc4-4d12-a71f-3ea99ba8a169',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'LogCreated',
+    logs: [ [Object], [Object], [Object], [Object], [Object] ]
+  },
+  {
+    event_type: 'TestRunFinished',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: 'ce47a1c6-ad14-43c6-8389-215de1652f10',
+      name: 'User Logout',
+      body: [Object],
+      identifier: 'User Logout',
+      scope: 'User Logout',
+      scopes: [],
+      custom_metadata: {},
+      file_name: 'tests/auth/logout.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/logout.spec.js',
+      location: 'tests/auth/logout.spec.js',
+      result: 'failed',
+      duration_in_ms: 32069,
+      started_at: '2026-03-18T18:27:41.599Z',
+      finished_at: '2026-03-18T18:28:13.668Z',
+      failure: [Array],
+      failure_type: 'UnhandledError',
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'c8782d4b-0e0b-49be-a050-934befd036d8',
+      integrations: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:28:33.234Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:28:33.869Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunStarted',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: 'dc7628da-2dfb-4393-a283-eaf6710fe251',
+    name: 'User Logout',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        '  const loginPage = new LoginPage(page);\n' +
+        '  await loginPage.navigate();\n' +
+        "  await loginPage.login('james@mailinator.com', 'Harin123');\n" +
+        '\n' +
+        '  // open profile menu\n' +
+        `  await page.locator("//button[@class='relative flex items-center gap-3 px-4 py-2 bg-white border-2 border-gray-200 rounded-xl transition-all shadow-sm group']").click();\n` +
+        '\n' +
+        '  // click logout\n' +
+        "  await page.getByText('Log Out').click();\n" +
+        '\n' +
+        '  // handle confirmation dialog\n' +
+        `  await page.locator('span:has-text("Log Out")').first().click();\n` +
+        '}'
+    },
+    identifier: 'User Logout',
+    scope: 'User Logout',
+    scopes: [],
+    custom_metadata: undefined,
+    file_name: 'tests/auth/logout.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/logout.spec.js',
+    location: 'tests/auth/logout.spec.js',
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2026-03-18T18:28:33.865Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -Samsung Galaxy S23:13-browserstack-mobile auth/logout.spec.js User Logout'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:28:35.235Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'TestRunStarted',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: 'dc7628da-2dfb-4393-a283-eaf6710fe251',
+      name: 'User Logout',
+      body: [Object],
+      identifier: 'User Logout',
+      scope: 'User Logout',
+      scopes: [],
+      custom_metadata: undefined,
+      file_name: 'tests/auth/logout.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/logout.spec.js',
+      location: 'tests/auth/logout.spec.js',
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2026-03-18T18:28:33.865Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:28:35.236Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:28:44.811Z CLI info [sdk:service]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Driver initialized as primary driver: platformIndex=3
+2026-03-18T18:28:56.455Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'dc7628da-2dfb-4393-a283-eaf6710fe251',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:28:57.247Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'dc7628da-2dfb-4393-a283-eaf6710fe251',
+      integrations: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:28:57.248Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:29:05.476Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '73bb00aa-758e-4e20-b08c-bec5e3fde036',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:29:05.726Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'e0b8a2c2-4dc4-4d12-a71f-3ea99ba8a169',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:29:06.458Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'c8782d4b-0e0b-49be-a050-934befd036d8',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:29:06.993Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'c8782d4b-0e0b-49be-a050-934befd036d8',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:29:07.253Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '73bb00aa-758e-4e20-b08c-bec5e3fde036',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'e0b8a2c2-4dc4-4d12-a71f-3ea99ba8a169',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'c8782d4b-0e0b-49be-a050-934befd036d8',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'c8782d4b-0e0b-49be-a050-934befd036d8',
+      integrations: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:29:07.254Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:29:12.666Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '73bb00aa-758e-4e20-b08c-bec5e3fde036',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:29:13.256Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '73bb00aa-758e-4e20-b08c-bec5e3fde036',
+      integrations: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:29:13.258Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:29:15.282Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'e0b8a2c2-4dc4-4d12-a71f-3ea99ba8a169',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:29:17.258Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'e0b8a2c2-4dc4-4d12-a71f-3ea99ba8a169',
+      integrations: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:29:17.259Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:29:19.882Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'dc7628da-2dfb-4393-a283-eaf6710fe251',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:29:20.525Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'dc7628da-2dfb-4393-a283-eaf6710fe251',
+    integrations: { browserstack: [Object] }
+  }
+} to 9327:0
+2026-03-18T18:29:21.259Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'dc7628da-2dfb-4393-a283-eaf6710fe251',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'dc7628da-2dfb-4393-a283-eaf6710fe251',
+      integrations: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:29:21.260Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:29:37.979Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunFinished',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: 'c8782d4b-0e0b-49be-a050-934befd036d8',
+    name: 'User Login',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        '  const loginPage = new LoginPage(page);\n' +
+        '  await loginPage.navigate();\n' +
+        "  await loginPage.login('james@mailinator.com', 'Harin123');\n" +
+        '  // verify successful login\n' +
+        '  await expect(page).toHaveURL(/jobs/i);\n' +
+        '}'
+    },
+    identifier: 'User Login',
+    scope: 'User Login',
+    scopes: [],
+    custom_metadata: {},
+    file_name: 'tests/auth/login.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/login.spec.js',
+    location: 'tests/auth/login.spec.js',
+    result: 'failed',
+    duration_in_ms: 36433,
+    started_at: '2026-03-18T18:28:22.207Z',
+    finished_at: '2026-03-18T18:28:58.640Z',
+    failure: [ [Object] ],
+    failure_type: 'TimeoutError',
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -Samsung Galaxy S23:13-browserstack-mobile auth/login.spec.js User Login'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:29:39.268Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'TestRunFinished',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: 'c8782d4b-0e0b-49be-a050-934befd036d8',
+      name: 'User Login',
+      body: [Object],
+      identifier: 'User Login',
+      scope: 'User Login',
+      scopes: [],
+      custom_metadata: {},
+      file_name: 'tests/auth/login.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/login.spec.js',
+      location: 'tests/auth/login.spec.js',
+      result: 'failed',
+      duration_in_ms: 36433,
+      started_at: '2026-03-18T18:28:22.207Z',
+      finished_at: '2026-03-18T18:28:58.640Z',
+      failure: [Array],
+      failure_type: 'TimeoutError',
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:29:39.269Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:29:43.745Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunFinished',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: '73bb00aa-758e-4e20-b08c-bec5e3fde036',
+    name: 'Forgot Password Flow',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        "  await page.goto('https://tgn-staging.staffbot.com/');\n" +
+        '\n' +
+        '  // open login\n' +
+        "  await page.getByRole('link', {\n" +
+        "    name: 'Login or Create Account'\n" +
+        '  }).click();\n' +
+        "  await page.getByRole('link', {\n" +
+        "    name: 'Sign in here'\n" +
+        '  }).click();\n' +
+        '\n' +
+        '  // click forgot password\n' +
+        "  await page.getByText('Forgot your password? →', {\n" +
+        '    exact: true\n' +
+        '  }).click();\n' +
+        '\n' +
+        '  // enter email\n' +
+        "  await page.getByPlaceholder('Enter your email address').fill('james@mailinator.com');\n" +
+        '\n' +
+        '  // submit\n' +
+        "  await page.getByRole('button', {\n" +
+        "    name: 'Send Reset Link'\n" +
+        '  }).click();\n' +
+        '\n' +
+        '  // verify success message\n' +
+        "  await expect(page.getByText('Password reset email sent!')).toBeVisible();\n" +
+        '\n' +
+        '  // back to login\n' +
+        "  await page.getByRole('link', {\n" +
+        "    name: 'Back to Login'\n" +
+        '  }).click();\n' +
+        '}'
+    },
+    identifier: 'Forgot Password Flow',
+    scope: 'Forgot Password Flow',
+    scopes: [],
+    custom_metadata: {},
+    file_name: 'tests/auth/forgot-password.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/forgot-password.spec.js',
+    location: 'tests/auth/forgot-password.spec.js',
+    result: 'failed',
+    duration_in_ms: 43231,
+    started_at: '2026-03-18T18:28:20.977Z',
+    finished_at: '2026-03-18T18:29:04.208Z',
+    failure: [ [Object] ],
+    failure_type: 'TimeoutError',
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -Samsung Galaxy S23:13-browserstack-mobile auth/forgot-password.spec.js Forgot Password Flow'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:29:45.271Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'TestRunFinished',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: '73bb00aa-758e-4e20-b08c-bec5e3fde036',
+      name: 'Forgot Password Flow',
+      body: [Object],
+      identifier: 'Forgot Password Flow',
+      scope: 'Forgot Password Flow',
+      scopes: [],
+      custom_metadata: {},
+      file_name: 'tests/auth/forgot-password.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/forgot-password.spec.js',
+      location: 'tests/auth/forgot-password.spec.js',
+      result: 'failed',
+      duration_in_ms: 43231,
+      started_at: '2026-03-18T18:28:20.977Z',
+      finished_at: '2026-03-18T18:29:04.208Z',
+      failure: [Array],
+      failure_type: 'TimeoutError',
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:29:45.272Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:29:46.373Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunFinished',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: 'e0b8a2c2-4dc4-4d12-a71f-3ea99ba8a169',
+    name: 'Invalid Login Attempt',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        '  const loginPage = new LoginPage(page);\n' +
+        '  await loginPage.navigate();\n' +
+        "  await loginPage.login('invalid@email.com', 'wrongpassword');\n" +
+        '\n' +
+        '  // verify error message\n' +
+        "  await expect(page.getByText('Invalid email or password. Please check your credentials and try again.')).toBeVisible();\n" +
+        '}'
+    },
+    identifier: 'Invalid Login Attempt',
+    scope: 'Invalid Login Attempt',
+    scopes: [],
+    custom_metadata: {},
+    file_name: 'tests/auth/invalid-login.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/invalid-login.spec.js',
+    location: 'tests/auth/invalid-login.spec.js',
+    result: 'failed',
+    duration_in_ms: 45616,
+    started_at: '2026-03-18T18:28:21.881Z',
+    finished_at: '2026-03-18T18:29:07.497Z',
+    failure: [ [Object] ],
+    failure_type: 'TimeoutError',
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -Samsung Galaxy S23:13-browserstack-mobile auth/invalid-login.spec.js Invalid Login Attempt'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:29:47.272Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'TestRunFinished',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: 'e0b8a2c2-4dc4-4d12-a71f-3ea99ba8a169',
+      name: 'Invalid Login Attempt',
+      body: [Object],
+      identifier: 'Invalid Login Attempt',
+      scope: 'Invalid Login Attempt',
+      scopes: [],
+      custom_metadata: {},
+      file_name: 'tests/auth/invalid-login.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/invalid-login.spec.js',
+      location: 'tests/auth/invalid-login.spec.js',
+      result: 'failed',
+      duration_in_ms: 45616,
+      started_at: '2026-03-18T18:28:21.881Z',
+      finished_at: '2026-03-18T18:29:07.497Z',
+      failure: [Array],
+      failure_type: 'TimeoutError',
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:29:47.274Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:29:51.499Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Added the event {
+  event_type: 'TestRunFinished',
+  logs: [],
+  test_run: {
+    type: 'test',
+    framework: 'Playwright',
+    uuid: 'dc7628da-2dfb-4393-a283-eaf6710fe251',
+    name: 'User Logout',
+    body: {
+      lang: 'javascript',
+      code: 'async ({\n' +
+        '  page\n' +
+        '}) => {\n' +
+        '  const loginPage = new LoginPage(page);\n' +
+        '  await loginPage.navigate();\n' +
+        "  await loginPage.login('james@mailinator.com', 'Harin123');\n" +
+        '\n' +
+        '  // open profile menu\n' +
+        `  await page.locator("//button[@class='relative flex items-center gap-3 px-4 py-2 bg-white border-2 border-gray-200 rounded-xl transition-all shadow-sm group']").click();\n` +
+        '\n' +
+        '  // click logout\n' +
+        "  await page.getByText('Log Out').click();\n" +
+        '\n' +
+        '  // handle confirmation dialog\n' +
+        `  await page.locator('span:has-text("Log Out")').first().click();\n` +
+        '}'
+    },
+    identifier: 'User Logout',
+    scope: 'User Logout',
+    scopes: [],
+    custom_metadata: {},
+    file_name: 'tests/auth/logout.spec.js',
+    vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/logout.spec.js',
+    location: 'tests/auth/logout.spec.js',
+    result: 'failed',
+    duration_in_ms: 36589,
+    started_at: '2026-03-18T18:28:33.865Z',
+    finished_at: '2026-03-18T18:29:10.454Z',
+    failure: [ [Object] ],
+    failure_type: 'TimeoutError',
+    failure_reason: null,
+    retry_of: null,
+    tags: [],
+    customRerunParam: {
+      rerun_name: ' -Samsung Galaxy S23:13-browserstack-mobile auth/logout.spec.js User Logout'
+    },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false,
+      lts: false
+    }
+  }
+} to 9327:0
+2026-03-18T18:29:53.289Z CLI info [testhub:request-queue-handler]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Processing batch event [
+  {
+    event_type: 'TestRunFinished',
+    logs: [],
+    test_run: {
+      type: 'test',
+      framework: 'Playwright',
+      uuid: 'dc7628da-2dfb-4393-a283-eaf6710fe251',
+      name: 'User Logout',
+      body: [Object],
+      identifier: 'User Logout',
+      scope: 'User Logout',
+      scopes: [],
+      custom_metadata: {},
+      file_name: 'tests/auth/logout.spec.js',
+      vc_filepath: 'Documents/TGN_Browserstack_Automation/tests/auth/logout.spec.js',
+      location: 'tests/auth/logout.spec.js',
+      result: 'failed',
+      duration_in_ms: 36589,
+      started_at: '2026-03-18T18:28:33.865Z',
+      finished_at: '2026-03-18T18:29:10.454Z',
+      failure: [Array],
+      failure_type: 'TimeoutError',
+      failure_reason: null,
+      retry_of: null,
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object]
+    }
+  }
+] to 9327:0
+2026-03-18T18:29:53.291Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-03-18T18:31:24.497Z CLI info [main]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Received graceful signal termination (SIGINT), performing cleanup
+2026-03-18T18:31:24.518Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making PUT request to https://collector-observability.browserstack.com
+2026-03-18T18:31:24.539Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2026-03-18T18:31:24.545Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2026-03-18T18:31:24.548Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2026-03-18T18:31:24.549Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2026-03-18T18:31:24.865Z CLI info [TEST REPORTING AND ANALYTICS:module]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Visit https://automation.browserstack.com/builds/fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit to view build report, insights, and many more debugging information all at one place!
+2026-03-18T18:31:24.884Z CLI info [TEST REPORTING AND ANALYTICS:module]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Visit https://automation.browserstack.com/builds/fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit to view build report, insights, and many more debugging information all at one place!
+2026-03-18T18:31:24.885Z CLI error  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  error invoking callback for eventName: {}
+2026-03-18T18:31:24.886Z CLI error  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Error: Invalid session
+    at Object.getBinSession (/snapshot/browserstack-binary/cli/dist/index.js)
+    at /snapshot/browserstack-binary/cli/dist/index.js
+    at _0x577395.onStop (/snapshot/browserstack-binary/cli/dist/index.js)
+    at HookRegistry.invoke (/snapshot/browserstack-binary/cli/dist/index.js)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /snapshot/browserstack-binary/cli/dist/index.js
+    at async Promise.allSettled (index 0)
+    at async /snapshot/browserstack-binary/cli/dist/index.js
+2026-03-18T18:31:24.887Z CLI error [sdk:service]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  Error occured in StopBinSession a6cac9c7-577b-4893-bf0c-51b8e62ac1e2: Invalid session
+2026-03-18T18:31:24.919Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://eds.browserstack.com
+2026-03-18T18:31:24.938Z CLI info  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  [PRODUCTION] Making POST request to https://eds.browserstack.com
+2026-03-18T18:31:25.790Z CLI info [testhub:module]  [harinpatel_19unzl]  [fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit]  [a6cac9c7-577b-4893-bf0c-51b8e62ac1e2]  stopBuild: fu9kxiqbpbeop1levkw8ztgxy3qw2ajv5b3bepit request={"finished_at":"2026-03-18T18:31:24.515Z","finished_metadata":[{"reason":"signal_termination","signal":"SIGINT"}],"custom_metadata":null} response={"data":""}
