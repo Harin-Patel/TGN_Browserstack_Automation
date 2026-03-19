@@ -13,16 +13,8 @@ platforms:
     osVersion: Sonoma
     browserName: safari
 
-  - deviceName: iPhone 15
-    osVersion: 17
-    browserName: safari
-
-  - deviceName: Samsung Galaxy S23
-    osVersion: 13
-    browserName: chrome
-
 runSettings:
   projectName: TGN BrowserStack Automation
   buildName: Regression Suite
   sessionName: Playwright JS Tests
-  parallels: 4
+  parallels: 2
