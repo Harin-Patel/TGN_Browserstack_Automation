@@ -129,11 +129,13 @@ await this.page.getByText('Profile updated successfully').first().waitFor({ stat
  * Waits for a transient banner/toast line (substring or regex match on visible text).
  * @param {string|RegExp} textOrRegExp
  */
-async waitForNotice(textOrRegExp){
+async waitForNotice(textOrRegExp, options = {}){
 
 const loc = typeof textOrRegExp === 'string'
 ? this.page.getByText(textOrRegExp, { exact: false })
 : this.page.getByText(textOrRegExp)
+
+const timeout = options.timeout ?? 45000
 
 await expect.poll(async () => {
 
@@ -146,7 +148,7 @@ if (await loc.nth(i).isVisible()) return true
 
 return false
 }, {
-timeout: 45000,
+timeout,
 }).toBeTruthy()
 }
 
@@ -258,31 +260,87 @@ await this.page.getByRole('button', { name: 'Add License' }).last().click()
 
 /**
  * Certification + specialty pair on “Add New Certification Specialty”.
+ * Varies the pair using `options.salt` (or time + random) to reduce duplicate “already registered” pairs.
+ * @param {{ salt?: number }} [options]
  */
-async specialtyAddFormPickCertificationThenSpecialty(){
+async specialtyAddFormPickCertificationThenSpecialty(options = {}){
 
 const certRoot = this.page.locator('.MuiAutocomplete-root')
 .filter({ has: this.page.locator('input[placeholder="Select certification"]') })
 .first()
 
+const preferCert = /BLS|CPR|Basic Life|ACLS|Advanced Cardiac|RN|Nursing|Certified|IV/i
+
 await certRoot.getByRole('button', { name: 'Open' }).click()
 
-const popper = this.page.locator('.MuiAutocomplete-popper')
+let popper = this.page.locator('.MuiAutocomplete-popper')
 
-await popper.locator('[role="option"], li').first().waitFor({ state: 'visible', timeout: 45000 })
+let certItems = popper.locator('[role="option"], li')
 
-const items = await popper.locator('[role="option"], li').allTextContents()
+await certItems.first().waitFor({ state: 'visible', timeout: 45000 })
 
-const choice = items.find(t => /BLS|CPR|Basic Life|ACLS|Advanced Cardiac|RN|Nursing/i.test(String(t))) || items[0]
+const certCount = await certItems.count()
 
-await popper.locator('[role="option"], li', { hasText: choice }).first().click()
+if (certCount < 1) throw new Error('No certification options in autocomplete')
 
-await this.page.waitForFunction(() => {
+const certLabels = await certItems.allTextContents()
+
+let certPickIndices = certLabels
+.map((t, i) => ({ t: String(t).trim(), i }))
+.filter(({ t }) => t && preferCert.test(t))
+.map(({ i }) => i)
+
+if (certPickIndices.length === 0){
+
+certPickIndices = certLabels.map((t, i) => ({ t: String(t).trim(), i })).filter(({ t }) => t).map(({ i }) => i)
+}
+
+if (certPickIndices.length === 0) certPickIndices = [...Array(certCount).keys()]
+
+const entropy = options.salt != null
+? BigInt(options.salt)
+: (BigInt(Date.now()) ^ BigInt(Math.floor(Math.random() * 0x7fffffff)))
+
+const start = Number((entropy + 97n) % BigInt(certPickIndices.length))
+
+let certIdxUsed = null
+
+for (let k = 0; k < certPickIndices.length; k++){
+
+if (k > 0){
+
+await certRoot.getByRole('button', { name: 'Open' }).click()
+
+popper = this.page.locator('.MuiAutocomplete-popper')
+
+certItems = popper.locator('[role="option"], li')
+
+await certItems.first().waitFor({ state: 'visible', timeout: 45000 })
+}
+
+const idxInList = certPickIndices[(start + k) % certPickIndices.length]
+
+await certItems.nth(idxInList).click()
+
+const specialtyReady = await this.page.waitForFunction(() => {
 
 const el = document.querySelector('input[placeholder="Select specialty"]')
 
 return el && el.offsetParent !== null && !el.disabled
-}, null, { timeout: 25000 })
+}, null, { timeout: 15000 }).then(() => true).catch(() => false)
+
+if (specialtyReady){
+
+certIdxUsed = idxInList
+
+break
+}
+}
+
+if (certIdxUsed === null){
+
+throw new Error('No certification option enabled the specialty field — check staging data')
+}
 
 const specRoot = this.page.locator('.MuiAutocomplete-root')
 .filter({ has: this.page.locator('input[placeholder="Select specialty"]') })
@@ -292,9 +350,26 @@ await specRoot.getByRole('button', { name: 'Open' }).click()
 
 const popper2 = this.page.locator('.MuiAutocomplete-popper')
 
-await popper2.locator('[role="option"], li').first().waitFor({ state: 'visible', timeout: 45000 })
+const specItems = popper2.locator('[role="option"], li')
 
-await popper2.locator('[role="option"], li').first().click()
+await specItems.first().waitFor({ state: 'visible', timeout: 45000 })
+
+const specCount = await specItems.count()
+
+if (specCount < 1) throw new Error('No specialty options in autocomplete')
+
+const specLabels = await specItems.allTextContents()
+
+let specPickIndices = specLabels
+.map((t, i) => ({ t: String(t).trim(), i }))
+.filter(({ t }) => t)
+.map(({ i }) => i)
+
+if (specPickIndices.length === 0) specPickIndices = [...Array(specCount).keys()]
+
+const specIdx = specPickIndices[Number((entropy * 7919n + BigInt(certIdxUsed) * 193n) % BigInt(specPickIndices.length))]
+
+await specItems.nth(specIdx).click()
 
 await this.page.locator('.MuiAutocomplete-popper').waitFor({ state: 'hidden', timeout: 15000 }).catch(() => {})
 }

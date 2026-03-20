@@ -11,7 +11,8 @@ platforms:
 
   - os: OS X
     osVersion: Sonoma
-    browserName: safari
+    browserName: playwright-webkit
+    browserVersion: latest
 
 runSettings:
   projectName: TGN BrowserStack Automation

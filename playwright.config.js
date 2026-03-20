@@ -14,6 +14,12 @@ import { defineConfig, devices } from '@playwright/test';
  */
 export default defineConfig({
   testDir: './tests',
+  /* Default Playwright template; keep out of TGN / BrowserStack regression runs. */
+  testIgnore: ['**/example.spec.js'],
+  /* Remote runs (BrowserStack) need more time than the default 30s per test. */
+  timeout: 120000,
+  /* Default 5s is tight for staging navigations (e.g. onboarding after register). */
+  expect: { timeout: 30000 },
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -22,8 +28,11 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
-  /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  /* Client matrix CSV is generated from JSON via scripts/generate-client-report.mjs */
+  reporter: [
+    ['html'],
+    ['json', { outputFile: 'reports/playwright-results.json' }],
+  ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */

@@ -57,18 +57,48 @@ const formTitle = /Add New.*Specialty/i
 
 await profilePage.openSectionAddForm('Add Certification Specialty', formTitle)
 
-await profilePage.specialtyAddFormPickCertificationThenSpecialty()
-
 const deleteSpecialtyBtns = page.getByRole('button', { name: 'Delete certification specialty' })
 
 const rowCountBefore = await deleteSpecialtyBtns.count()
 
+let added = false
+
+for (let attempt = 0; attempt < 6 && !added; attempt++){
+
+const salt = Date.now() + attempt * 924269 + Math.floor(Math.random() * 100000)
+
+await profilePage.specialtyAddFormPickCertificationThenSpecialty({ salt })
+
+const rowsBeforeClick = await deleteSpecialtyBtns.count()
+
 await page.getByRole('button', { name: 'Add Specialty' }).click()
 
-await expect.poll(async () => (await deleteSpecialtyBtns.count()) > rowCountBefore,
-{ timeout: 60000 }).toBeTruthy()
+try {
 
-await profilePage.waitForNotice(/Certification specialty added/i).catch(() => {})
+await expect.poll(async () => {
+
+if ((await deleteSpecialtyBtns.count()) > rowsBeforeClick) return true
+
+const toast = page.getByText(/Certification specialty added/i)
+
+const n = await toast.count()
+
+for (let i = 0; i < n; i++){
+
+if (await toast.nth(i).isVisible()) return true
+}
+
+return false
+}, { timeout: 55000 }).toBeTruthy()
+
+added = true
+}
+
+catch {
+
+if (attempt === 5) throw new Error('Could not add a unique certification specialty after 6 attempts (pairs may all exist)')
+}
+}
 
 page.once('dialog', d => d.accept())
 

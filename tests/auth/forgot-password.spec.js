@@ -2,26 +2,26 @@ const { test, expect } = require('@playwright/test');
 
 test('Forgot Password Flow', async ({ page }) => {
 
-await page.goto('https://tgn-staging.staffbot.com/')
+test.setTimeout(120000)
 
-// open login
+await page.goto('/')
+
 await page.getByRole('link', { name: 'Login or Create Account' }).click()
 
-await page.getByRole('link', { name: 'Sign in here' }).click()
+const goToLogin = page.getByRole('link', { name: 'Go to login' })
+await goToLogin.waitFor({ state: 'visible', timeout: 90000 })
+await goToLogin.click()
 
-// click forgot password
-await page.getByText('Forgot your password? →', { exact: true }).click()
+await page.waitForURL(/\/login/i, { timeout: 90000 })
 
-// enter email
+await page.getByText(/Forgot your password/i).click()
+
 await page.getByPlaceholder('Enter your email address').fill('james@mailinator.com')
 
-// submit
 await page.getByRole('button', { name: 'Send Reset Link' }).click()
 
-// verify success message
-await expect(page.getByText('Password reset email sent!')).toBeVisible()
+await expect(page.getByText('Password reset email sent!')).toBeVisible({ timeout: 60000 })
 
-// back to login
 await page.getByRole('link', { name: 'Back to Login' }).click()
 
 })
